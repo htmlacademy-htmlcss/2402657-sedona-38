@@ -22,9 +22,7 @@
       </li>
     </ul>
   </nav>
-  <a href="#">
-    <span class="visually-hidden">Поиск</span>
-  </a>
+    <button type="button" aria-label="Search">Поиск</button>
   <a href="#">
     <span class="visually-hidden">Избранное</span>
   </a>
@@ -88,23 +86,19 @@
       <fieldset class="catalog-filter-group">
         <legend class="catalog-filter-title">Стоимость, ₽:</legend>
         <label class="price-range">
-          <input class="price-input" type="text" name="" value="0">
+          <input class="price-input" type="text" name="price from" value="0">
           <span class="range-title">от</span>
         </label>
         <label class="price-range">
-          <input class="price-input" type="text" name="" value="9000">
+          <input class="price-input" type="text" name="price to" value="9000">
           <span class="range-title">до</span>
         </label>
         <label class="myRange">
           <input class="price-slider" type="range" min="1" max="100" value="50" id="myRange">
         </label>
       </fieldset>
-      <a class="catalog-filter" href="https://echo.htmlacademy.ru/">
         <button class="button button-submit" type="submit">Применить</button>
-      </a>
-      <a class="catalog-filter" href="https://echo.htmlacademy.ru/">
         <button class="button button-reset" type="reset">Сбросить</button>
-      </a>
     </form>
   </section>
   <section>

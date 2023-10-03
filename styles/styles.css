@@ -219,14 +219,15 @@ p a {
   text-align: center;
 }
 
-/*Удаляю стили для списков (<ul>)*/
-.advantages-list, .services-list, .footer-social-list {
+/*Удаляю стили для списков на всех страницах (<ul>)*/
+.advantages-list, .services-list, .footer-social-list, .catalog-filter-group {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 /*Стили для страницы catalog*/
 /*Добавляю стрелку для крошек на странице Каталога*/
+/*Стили для стрелки*/
 i {
   border: solid #FFFFFF;
   border-width: 0 3px 3px 0;
@@ -237,7 +238,7 @@ i {
 .right-arrow {
   transform: rotate(-45deg);
 }
-
+/*Стили для внутреннего хэдера*/
 .header-inner-title {
   font-family: "PT Sans", sans-serif;
   font-size: 60px;
@@ -245,13 +246,66 @@ i {
   line-height: 78px;
   color: #FFFFFF;
 }
-
+/*Стили для хлебных крошек*/
 .breadcrumbs-item {
   color: #FFFFFF;
 }
 
 .breadcrumbs-link {
   color: #FFFFFF;
-
+  text-decoration-line: none;
+}
+/*Стили для заголовка фильтра */
+.catalog-filter-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+/*Стили для лейбла фильтра */
+.control {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+/*Стили для границ выбора */
+.range-title{
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  text-align: right;
 }
 
+.price-input {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
+.button-submit, .button-reset {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.button-submit {
+  background-color: #82B3D3;
+}
+
+.button-reset {
+  border: none;
+  background-color: transparent;
+}
+
+.catalog-products {
+  background-image: url("images/background-filter.jpg");
+}

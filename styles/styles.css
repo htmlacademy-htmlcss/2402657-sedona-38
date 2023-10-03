@@ -1,3 +1,4 @@
+/*Общие стили и стили для страницы index*/
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -15,7 +16,7 @@
 }
 
 body {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
@@ -28,7 +29,7 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
@@ -38,11 +39,13 @@ body {
 }
 
 .hero {
-  background-image: url("images/hero-background.jpg");
+  background-image: url("/images/hero-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services-title {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -52,7 +55,7 @@ body {
 }
 
 .subscribe .services-title {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -62,7 +65,7 @@ body {
 }
 
 .services-description {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -71,7 +74,7 @@ body {
 }
 
 .services-description-white {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -84,7 +87,7 @@ body {
 }
 
 .advantages-title-white {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -92,8 +95,9 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
 .advantages-title {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -103,7 +107,7 @@ body {
 }
 
 .advantages-description-white {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -112,7 +116,7 @@ body {
 }
 
 .advantages-description {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -133,7 +137,7 @@ body {
 }
 
 .services-name {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -142,7 +146,7 @@ body {
 }
 
 .services-name-description {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -161,12 +165,19 @@ body {
 .search {
   background-color: #FFFFFF;
 }
+
 .subscribe {
   color: #FFFFFF;
   background-color: aquamarine;
   background-image: url("/images/subscribe-background.jpg");
   background-size: cover;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
+  min-height: 415px;
+  max-width: 1280px;
+  padding: 96px 40px 104px;
+  margin: 0 auto;
+  /*если 2 значения: то верх/низ и лево/право*/
+  /*если 3 значения: то верх лево/право и низ*/
 }
 
 .page-footer {
@@ -179,7 +190,7 @@ body {
 }
 
 p a {
-  font-family: "PT Sans","sans-serif";
+  font-family: "PT Sans", sans-serif;
   font-size: 40px;
   font-weight: 400;
   line-height: 40px;
@@ -188,7 +199,59 @@ p a {
   text-decoration-line: none;
 }
 
-/*.visually-hidden {*/
-/*  visibility: hidden;*/
-/*}*/
+.hero {
+  text-align: center;
+}
+
+.services-item-azure {
+  text-align: center;
+}
+
+.services-item {
+  text-align: center;
+}
+
+.search {
+  text-align: center;
+}
+
+.form {
+  text-align: center;
+}
+
+/*Удаляю стили для списков (<ul>)*/
+.advantages-list, .services-list, .footer-social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*Стили для страницы catalog*/
+/*Добавляю стрелку для крошек на странице Каталога*/
+i {
+  border: solid #FFFFFF;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right-arrow {
+  transform: rotate(-45deg);
+}
+
+.header-inner-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-item {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  color: #FFFFFF;
+
+}
 

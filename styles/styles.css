@@ -39,9 +39,13 @@ body {
 }
 
 .hero {
-  background-image: url("/images/hero-background.jpg");
+  background-image: url("/images/backgrounds/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 485px;
+  max-width: 1200px;
+  padding: 96px 40px 104px;
+  margin: 0 auto;
 }
 
 .services-title {
@@ -169,7 +173,7 @@ body {
 .subscribe {
   color: #FFFFFF;
   background-color: aquamarine;
-  background-image: url("/images/subscribe-background.jpg");
+  background-image: url("/images/backgrounds/subscribe-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 415px;
@@ -220,11 +224,12 @@ p a {
 }
 
 /*Удаляю стили для списков на всех страницах (<ul>)*/
-.advantages-list, .services-list, .footer-social-list, .catalog-filter-group {
+.advantages-list, .services-list, .footer-social-list, .catalog-filter-group, .product-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 /*Стили для страницы catalog*/
 /*Добавляю стрелку для крошек на странице Каталога*/
 /*Стили для стрелки*/
@@ -238,6 +243,7 @@ i {
 .right-arrow {
   transform: rotate(-45deg);
 }
+
 /*Стили для внутреннего хэдера*/
 .header-inner-title {
   font-family: "PT Sans", sans-serif;
@@ -246,6 +252,7 @@ i {
   line-height: 78px;
   color: #FFFFFF;
 }
+
 /*Стили для хлебных крошек*/
 .breadcrumbs-item {
   color: #FFFFFF;
@@ -255,6 +262,7 @@ i {
   color: #FFFFFF;
   text-decoration-line: none;
 }
+
 /*Стили для заголовка фильтра */
 .catalog-filter-title {
   font-family: "PT Sans", sans-serif;
@@ -263,6 +271,7 @@ i {
   line-height: 24px;
   color: #FFFFFF;
 }
+
 /*Стили для лейбла фильтра */
 .control {
   font-family: "PT Sans", sans-serif;
@@ -271,8 +280,9 @@ i {
   line-height: 23px;
   color: #FFFFFF;
 }
+
 /*Стили для границ выбора */
-.range-title{
+.range-title {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -307,5 +317,139 @@ i {
 }
 
 .catalog-products {
-  background-image: url("images/background-filter.jpg");
+  background-image: url("/images/backgrounds/background-filter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 412px;
+  max-width: 1200px;
+  padding: 35px 70px 70px;
+  margin: 0 auto;
 }
+
+.search-result {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #000000;
+}
+
+.button-view-light {
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 2px #FFFFFF;
+}
+
+.button-view {
+  color: #000000;
+  background-color: #FFFFFF;
+  border: 2px #E5E5E5;
+}
+
+.product-card {
+  background-color: #ffffff;
+}
+
+.product-card-link {
+  text-decoration: none;
+}
+
+.product-card-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+}
+
+.class-type-of-leaving, .class-leaving-price {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-card-button-like {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.product-card-button-detail {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.product-card-detail-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.button-want {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+}
+
+.card-rate {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #333333;
+  background-color: #F2F2F2;
+}
+
+.pagination {
+  background-color: #ffffff;
+}
+
+.pagination-link {
+  color: #ffffff;
+  background-color: #82B3D3;
+  text-decoration: none;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pagination-current {
+  color: #000000;
+  background-color: #F2F2F2;
+  text-decoration: none;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.pagination-link-dots {
+  color: #000000;
+  background-color: transparent;
+  text-decoration: none;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.button-search {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-align: center;
+}
+

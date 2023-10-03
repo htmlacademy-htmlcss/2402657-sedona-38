@@ -8,7 +8,7 @@
 <body>
 <header class="page-header">
   <a class="navigation-logo" href="index.html">
-    <img class="page-header-logo" src="images/logo.svg" alt="Логотип Седона." width="140" height="70">
+    <img class="page-header-logo" src="images/logos/logo.svg" alt="Логотип Седона." width="140" height="70">
   </a>
   <nav class="navigation">
     <ul class="navigation-list">
@@ -27,13 +27,14 @@
   <a href="#">
     <span class="visually-hidden">Избранное</span>
   </a>
-  <button type="button" class="button want">Хочу сюда</button>
+  <button type="button" class="button-want">Хочу сюда!</button>
 </header>
 <main class="main-inner">
   <header class="header-inner">
     <h1 class="header-inner-title">Гостиницы Седоны</h1>
     <a class="breadcrumbs-link" href="index.html">
-      <img class="header-inner-logo" src="images/logo-main-page.svg" alt="Иконка возврата на главную." width="13" height="13">
+      <img class="header-inner-logo" src="images/logos/logo-main-page.svg" alt="Иконка возврата на главную." width="13"
+           height="13">
     </a>
     <span><i class="right-arrow"></i></span>
     <span class="breadcrumbs-item">Гостиницы</span>
@@ -112,63 +113,83 @@
       <option value="popular">Сначала популярные</option>
       <option value="expensive">Сначала дорогие</option>
     </select>
-    <button class="button button-light">
+    <button class="button-view-light">
       <span class="visually-hidden">Показать карточки</span>
     </button>
-    <button class="button">
+    <button class="button-view">
       <span class="visually-hidden">Показать на весь экран</span>
     </button>
-    <button class="button">
+    <button class="button-view">
       <span class="visually-hidden">Показать список</span>
     </button>
     <ul class="product-list">
       <li class="product-card">
-        <img class="product-card-image" src="images/hotel-1.jpg" alt="Фото гостиницы Amara Resort & Spa." width="300"
-             height="212">
-        <h3 class="product-card-title">Amara Resort & Spa</h3>
+        <a class="product-card-link" href="#">
+          <img class="product-card-image" src="images/hotels/hotel-1.jpg" alt="Фото гостиницы Amara Resort & Spa."
+               width="300"
+               height="212">
+          <h3 class="product-card-title">Amara Resort & Spa</h3>
+        </a>
         <span class="class-type-of-leaving">Гостиница</span>
         <span class="class-leaving-price">от 4000 ₽</span>
-        <a class="product-card-button detail" href="#">Подробнее</a>
-        <button class="product-card-button like">В избранное</button>
+        <button class="product-card-button-detail">
+          <a class="product-card-detail-link" href="#">Подробнее</a>
+        </button>
+        <button class="product-card-button-like">В избранное</button>
         <p class="star">
           <span class="visually-hidden">4 звезды</span>
         </p>
         <p class="card-rate">Рейтинг: 8,5</p>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/hotel-2.jpg" alt="Фото гостиницы Villas at Poco Diablo." width="300"
-             height="212">
-        <h3 class="product-card-title">Villas at Poco Diablo</h3>
+        <a class="product-card-link" href="#">
+          <img class="product-card-image" src="images/hotels/hotel-2.jpg" alt="Фото гостиницы Villas at Poco Diablo."
+               width="300"
+               height="212">
+          <h3 class="product-card-title">Villas at Poco Diablo</h3>
+        </a>
         <span class="class-type-of-leaving">Гостиница</span>
         <span class="class-leaving-price">от 5000 ₽</span>
-        <a class="product-card-button detail" href="#">Подробнее</a>
-        <button class="product-card-button like">В избранное</button>
+        <button class="product-card-button-detail">
+          <a class="product-card-detail-link" href="#">Подробнее</a>
+        </button>
+        <button class="product-card-button-like">В избранное</button>
         <p class="star">
           <span class="visually-hidden">4 звезды</span>
         </p>
         <p class="card-rate">Рейтинг: 9,2</p>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/hotel-3.jpg" alt="Фото гостиницы Desert Quail Inn." width="300"
-             height="212">
-        <h3 class="product-card-title">Desert Quail Inn</h3>
+        <a class="product-card-link" href="#">
+          <img class="product-card-image" src="images/hotels/hotel-3.jpg" alt="Фото гостиницы Desert Quail Inn."
+               width="300"
+               height="212">
+          <h3 class="product-card-title">Desert Quail Inn</h3>
+        </a>
         <span class="class-type-of-leaving">Гостиница</span>
         <span class="class-leaving-price">от 2500 ₽</span>
-        <a class="product-card-button detail" href="#">Подробнее</a>
-        <button class="product-card-button like">В избранное</button>
+        <button class="product-card-button-detail">
+          <a class="product-card-detail-link" href="#">Подробнее</a>
+        </button>
+        <button class="product-card-button-like">В избранное</button>
         <p class="star">
           <span class="visually-hidden">3 звезды</span>
         </p>
         <p class="card-rate">Рейтинг: 6,9</p>
       </li>
       <li class="product-card">
-        <img class="product-card-image" src="images/hotel-3.jpg#" alt="Фото гостиницы Green Time Inn." width="300"
-             height="212">
-        <h3 class="product-card-title">Desert Quail Inn</h3>
+        <a class="product-card-link" href="#">
+          <img class="product-card-image" src="images/hotels/hotel-4.jpg#" alt="Фото гостиницы Green Time Inn."
+               width="300"
+               height="212">
+          <h3 class="product-card-title">Desert Quail Inn</h3>
+        </a>
         <span class="class-type-of-leaving">Гостиница</span>
         <span class="class-leaving-price">от 1500 ₽</span>
-        <a class="product-card-button detail" href="#">Подробнее</a>
-        <button class="product-card-button like">В избранное</button>
+        <button class="product-card-button-detail">
+          <a class="product-card-detail-link" href="#">Подробнее</a>
+        </button>
+        <button class="product-card-button-like">В избранное</button>
         <p class="star">
           <span class="visually-hidden">2 звезды</span>
         </p>
@@ -177,7 +198,7 @@
     </ul>
     <ul class="pagination">
       <li class="pagination-item">
-        <a class="pagination-link pagination-current">1</a>
+        <a class="pagination-current">1</a>
       </li>
       <li class="pagination-item">
         <a class="pagination-link" href="#">2</a>
@@ -188,7 +209,7 @@
       <li class="pagination-item">
         <a class="pagination-link" href="#">4</a>
       <li class="pagination-item">
-        <a class="pagination-link" href="#">...</a>
+        <a class="pagination-link-dots" href="#">...</a>
       </li>
       <li class="pagination-item">
         <a class="pagination-link" href="#">10</a>
@@ -198,13 +219,13 @@
   </section>
   <section class="subscribe">
     <h2 class="services-title">Подпишитесь на рассылку</h2>
-    <p class="services-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <p class="services-description-white">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="form" action="https://echo.htmlacademy.ru/" method="post">
       <label for="newsletter-email">
         <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
                required>
       </label>
-      <button class="button button-search" type="submit">Подписаться</button>
+      <button class="button-subscribe" type="submit">Подписаться</button>
     </form>
   </section>
 </main>
@@ -230,8 +251,9 @@
   <p class="footer-phone">
     <a href="tel:+78128121212">+7 (812) 812-12-12</a>
   </p>
-  <a href="https://htmlacademy.ru/"><img src="images/logo-html-academy.svg" alt="Лого HTML Academy." width="115"
-                                         height="34"></a>
+  <a href="https://htmlacademy.ru/">
+    <img src="images/logos/logo-html-academy.svg" alt="Лого HTML Academy." width="115" height="34">
+  </a>
 </footer>
 </body>
 </html>

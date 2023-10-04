@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+<div class="page-container">
 <header class="page-header">
   <a class="navigation-logo" href="index.html">
     <img class="page-header-logo" src="images/logos/logo.svg" alt="Логотип Седона." width="140" height="70">
@@ -24,12 +25,13 @@
     </ul>
   </nav>
   <button type="button" aria-label="Search">Поиск</button>
-  <a href="#">
-    <span class="visually-hidden">Избранное</span>
+  <a class="likes-link" href="#">
+    <img src="images/icons/like.svg" alt="Иконка избранного." width="20" height="20">
   </a>
   <button type="button" class="button-want">Хочу сюда!</button>
 </header>
 <main class="main-inner">
+  <div class="filter-container">
   <header class="header-inner">
     <h1 class="header-inner-title">Гостиницы Седоны</h1>
     <a class="breadcrumbs-link" href="index.html">
@@ -106,6 +108,7 @@
       <button class="button-reset" type="reset">Сбросить</button>
     </form>
   </section>
+  </div>
   <section>
     <h2 class="search-result">Найдено гостиниц: 38</h2>
     <select class="select-control" aria-label="Сортировка">
@@ -114,13 +117,13 @@
       <option value="expensive">Сначала дорогие</option>
     </select>
     <button class="button-view-light">
-      <span class="visually-hidden">Показать карточки</span>
+      <img src="images/icons/view-1.svg" alt="Иконка показать карточки" width="16" height="14">
     </button>
     <button class="button-view">
-      <span class="visually-hidden">Показать на весь экран</span>
+      <img src="images/icons/view-2.svg" alt="Иконка показать на весь экра" width="16" height="14">
     </button>
     <button class="button-view">
-      <span class="visually-hidden">Показать список</span>
+      <img src="images/icons/view-3.svg" alt="Иконка показать список" width="16" height="14">
     </button>
     <ul class="product-list">
       <li class="product-card">
@@ -255,5 +258,6 @@
     <img src="images/logos/logo-html-academy.svg" alt="Лого HTML Academy." width="115" height="34">
   </a>
 </footer>
+</div>
 </body>
 </html>

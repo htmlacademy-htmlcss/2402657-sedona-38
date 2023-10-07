@@ -16,11 +16,13 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #F2F2F2;
+  box-sizing: border-box;
 }
 
 .page-container {
@@ -34,46 +36,58 @@ body {
 }
 
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
+  font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  background-color: #FFFFFF;
   text-align: center;
   text-decoration: none;
+}
+
+.favorites {
+  background-image: url("/images/icons/like.svg");
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.button-want {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
 }
 
 .hero {
   background-image: url("/images/backgrounds/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1200px;
   min-height: 485px;
-
+  text-align: center;
 }
 
 .services-title {
-  font-family: "PT Sans", sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
 }
 
-.subscribe .services-title {
-  font-family: "PT Sans", sans-serif;
-  font-size: 24px;
+.services-title-white {
+  font-size: 30px;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
 .services-description {
-  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -81,21 +95,34 @@ body {
   color: #333333;
 }
 
-.services-description-white {
-  font-family: "PT Sans", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
+.button-search {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
   color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .advantages-list, .visually-hidden {
   text-align: center;
 }
 
+/*Удаляю стили для списков на всех страницах (<ul>)*/
+.navigation-list, .advantages-list, .services-list, .footer-social-list, .catalog-filter-group, .product-list, .pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-item {
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
 .advantages-title-white {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -104,8 +131,19 @@ body {
   color: #FFFFFF;
 }
 
+.advantages-item-blue {
+  background-color: #82B3D3;
+}
+
+.advantages-description-white {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -114,26 +152,12 @@ body {
   color: #000000;
 }
 
-.advantages-description-white {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: center;
-  color: #FFFFFF;
-}
-
 .advantages-description {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   text-align: center;
   color: #333333;
-}
-
-.advantages-item-blue {
-  background-color: #82B3D3;
 }
 
 .advantages-item-white {
@@ -144,8 +168,36 @@ body {
   background-color: #83B3D333;
 }
 
+.services-item-azure {
+  background-color: #83B3D31F;
+  text-align: center;
+}
+
+.image-housing {
+  background-image: url("/images/icons/services-icon-housing.svg");
+  background-repeat: no-repeat;
+  width: 77px;
+  height: 72px;
+  margin: auto;
+}
+
+.image-food {
+  background-image: url("/images/icons/services-icon-food.svg");
+  background-repeat: no-repeat;
+  width: 76px;
+  height: 72px;
+  margin: auto;
+}
+
+.image-gifts {
+  background-image: url("/images/icons/services-icon-gifts.svg");
+  background-repeat: no-repeat;
+  width: 76px;
+  height: 76px;
+  margin: auto;
+}
+
 .services-name {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -154,7 +206,6 @@ body {
 }
 
 .services-name-description {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
@@ -162,16 +213,17 @@ body {
   color: #333333;
 }
 
-.services-item-azure {
-  background-color: #83B3D31F;
-}
-
-.services-item {
-  background-color: #FFFFFF;
-}
-
 .search {
   background-color: #FFFFFF;
+  text-align: center;
+}
+
+.services-description-index-white {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .subscribe {
@@ -181,7 +233,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 415px;
-  max-width: 1280px;
   padding: 96px 40px 104px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -190,54 +241,65 @@ body {
   /*если 3 значения: то верх лево/право и низ*/
 }
 
-.page-footer {
-  background-color: #FFFFFF;
-}
-
-.page-footer {
-  text-align: center;
-  background-color: #FFFFFF;
-}
-
-p a {
-  font-family: "PT Sans", sans-serif;
-  font-size: 40px;
-  font-weight: 400;
-  line-height: 40px;
-  text-align: center;
-  color: #000000;
-  text-decoration-line: none;
-}
-
-.hero {
-  text-align: center;
-}
-
-.services-item-azure {
-  text-align: center;
-}
-
-.services-item {
-  text-align: center;
-}
-
-.search {
-  text-align: center;
-}
-
 .form {
   text-align: center;
 }
 
-/*Удаляю стили для списков на всех страницах (<ul>)*/
-.advantages-list, .services-list, .footer-social-list, .catalog-filter-group, .product-list, .pagination {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.field {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+  background-color: #F2F2F2;
 }
-/*Стили для страницы catalog*/
-/*Добавляю стрелку для крошек на странице Каталога*/
+
+.button-subscribe {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.page-footer {
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+/*Cтили для страницы catalog*/
+.filter-container {
+  background-image: url("/images/backgrounds/background-filter.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 412px;
+  max-width: 1200px;
+  padding: 35px 70px 70px;
+  margin: 0 auto;
+}
+
+/*Стили для внутреннего хэдера*/
+.header-inner-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  color: #FFFFFF;
+}
+
+/*Стили для хлебных крошек*/
+.breadcrumbs-item {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
 /*Стили для стрелки*/
+.right-arrow {
+  transform: rotate(-45deg);
+}
+
 i {
   border: solid #FFFFFF;
   border-width: 0 3px 3px 0;
@@ -245,45 +307,35 @@ i {
   padding: 3px;
 }
 
-.right-arrow {
-  transform: rotate(-45deg);
-}
-/*Стили для внутреннего хэдера*/
-.header-inner-title {
-  font-family: "PT Sans", sans-serif;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 78px;
-  color: #FFFFFF;
-}
-/*Стили для хлебных крошек*/
-.breadcrumbs-item {
-  color: #FFFFFF;
-}
-
 .breadcrumbs-link {
   color: #FFFFFF;
   text-decoration-line: none;
 }
+
 /*Стили для заголовка фильтра */
 .catalog-filter-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   color: #FFFFFF;
 }
+
 /*Стили для лейбла фильтра */
 .control {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
   line-height: 23px;
   color: #FFFFFF;
 }
+
+.price-input {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #000000;
+}
+
 /*Стили для границ выбора */
-.range-title{
-  font-family: "PT Sans", sans-serif;
+.range-title {
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -291,20 +343,13 @@ i {
   text-align: right;
 }
 
-.price-input {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-  color: #000000;
-}
-
 .button-submit, .button-reset {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .button-submit {
@@ -316,22 +361,13 @@ i {
   background-color: transparent;
 }
 
-.filter-container {
-  background-image: url("/images/backgrounds/background-filter.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 412px;
-  max-width: 1200px;
-  padding: 35px 70px 70px;
-  margin: 0 auto;
-}
-
 .search-result {
-  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   color: #000000;
+  text-transform: uppercase;
+  background-color: #FFFFFF;
 }
 
 .button-view-light {
@@ -353,8 +389,8 @@ i {
 .product-card-link {
   text-decoration: none;
 }
+
 .product-card-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -362,52 +398,44 @@ i {
 }
 
 .class-type-of-leaving, .class-leaving-price {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   color: #333333;
 }
 
+.product-card-button-detail {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-transform: uppercase;
+}
+
+.product-card-detail-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 .product-card-button-like {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   color: #FFFFFF;
   background-color: #82B3D3;
-}
-
-.product-card-button-detail {
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  color: #FFFFFF;
-  background-color: #756157;
-}
-
-.product-card-detail-link, .likes-link {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-.button-want {
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  color: #FFFFFF;
-  background-color: #756157;
+  text-transform: uppercase;
 }
 
 .card-rate {
-  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #333333;
-  background-color:#F2F2F2 ;
+  background-color: #F2F2F2;
+  text-transform: uppercase;
 }
 
 .pagination {
@@ -441,33 +469,35 @@ i {
   text-align: center;
 }
 
-.button-search {
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
+.subscribe-catalog {
   color: #FFFFFF;
-  background-color: #756157;
-  text-transform: uppercase;
-  text-align: center;
+  background-color: #FFFFFF;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 415px;
+  padding: 96px 40px 104px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.button-subscribe {
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.field {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
+.services-description-catalog-black {
+  font-size: 22px;
   font-weight: 400;
-  line-height: 24px;
-  color: #000000;
-  background-color: #F2F2F2;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
+
+.footer-phone a {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  text-decoration-line: none;
+}
+
+
+
+
+

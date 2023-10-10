@@ -8,10 +8,10 @@
 <body>
 <div class="page-container">
 <header class="page-header">
-  <a class="navigation-logo" href="index.html">
-    <img class="page-header-logo" src="images/logos/logo.svg" alt="Логотип Седона." width="140" height="70">
-  </a>
   <nav class="navigation">
+    <a class="navigation-logo" href="index.html">
+      <img class="page-header-logo" src="images/logos/logo.svg" alt="Логотип Седона." width="140" height="70">
+    </a>
     <ul class="navigation-list">
       <li class="navigation-item">
         <a class="navigation-link" href="index.html">Главная</a>
@@ -23,14 +23,22 @@
         <a class="navigation-link" href="catalog.html">Гостиницы</a>
       </li>
     </ul>
-  </nav>
-  <button type="button" aria-label="Search">Поиск</button>
+  <ul class="navigation-list navigation-user">
+      <li class="navigation-item">
+        <button type="button" aria-label="Search">Поиск</button>
+      </li>
+  <li class="navigation-item">
     <a href="#">
       <p class="favorites"></p>
   </a>
+  </li>
+  <li class="navigation-item">
   <button type="button" class="button-want">Хочу сюда!</button>
+  </li>
+  </ul>
+  </nav>
 </header>
-<main class="main-index">
+<main class="main-container main-index">
   <section class="hero">
     <h1 class="visually-hidden">City Sedona</h1>
     <img class="hero-img" src="images/sedona-main.svg" alt="Главное изображение Седоны." width="458" height="352">
@@ -109,20 +117,18 @@
 </main>
 <footer class="page-footer">
   <h2 class="visually-hidden">Наши контакты</h2>
+  <div class="footer-container">
   <ul class="footer-social-list">
     <li class="footer-social-item">
-      <a class="button-social" href="https://vk.com/htmlacademy">
-        <span class="visually-hidden">ВКонтакте</span>
+      <a class="button-social-vk" href="https://vk.com/htmlacademy">
       </a>
     </li>
     <li class="footer-social-item">
-      <a class="button-social" href="https://t.me/htmlacademy ">
-        <span class="visually-hidden">Телеграм</span>
+      <a class="button-social-tg" href="https://t.me/htmlacademy ">
       </a>
     </li>
     <li class="footer-social-item">
-      <a class="button-social" href="https://www.youtube.com/user/htmlacademyru">
-        <span class="visually-hidden">Ютуб</span>
+      <a class="button-social-youtube" href="https://www.youtube.com/user/htmlacademyru">
       </a>
     </li>
   </ul>
@@ -132,6 +138,7 @@
   <a href="https://htmlacademy.ru/">
     <img src="images/logos/logo-html-academy.svg" alt="Лого HTML Academy." width="115" height="34">
   </a>
+  </div>
 </footer>
 </div>
 </body>

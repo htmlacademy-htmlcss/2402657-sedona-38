@@ -33,6 +33,12 @@ body {
   box-sizing: border-box;
 }
 
+.visually-hidden {
+  visibility: hidden;
+  padding: 0;
+  margin: 0;
+}
+
 .page-container {
   width: 1200px;
   margin: 0 auto;
@@ -47,18 +53,26 @@ body {
 .navigation {
   display: flex;
   width: 1060px;
+  height: 70px;
   margin: 0 auto;
+}
+
+.navigation-logo {
+  margin-right: 30px;
 }
 
 .navigation-list {
   width: 632px;
   display: flex;
-  flex-direction: row;
 }
 
 .navigation-user {
   max-width: 268px;
   margin-left: auto;
+}
+
+.navigation-item {
+  padding: 20px 16px;
 }
 
 .navigation-link {
@@ -196,6 +210,11 @@ body {
 
 .advantages-item-blue {
   background-color: #82B3D3;
+}
+
+/*делаю список с фото из инлайного элемента на флекс, чтобы ушел баг с отсупом под фоткой*/
+.advantages-photo {
+  display: flex;
 }
 
 .advantages-description-white {
@@ -363,8 +382,17 @@ body {
   justify-content: space-between;
 }
 
-.footer-social-list {
+.footer-social-list, .footer-html-link {
   display: flex;
+  align-self: center;
+}
+
+.social-link {
+  display: inline-flex;
+  width: 47px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .button-social-vk {
@@ -378,6 +406,7 @@ body {
 .button-social-youtube {
   background-image: url("/images/icons/youtube.svg");
 }
+
 /*Cтили для страницы catalog*/
 .filter-container {
   background-image: url("/images/backgrounds/background-filter.jpg");
@@ -391,7 +420,19 @@ body {
 
 .fieldset-container {
   display: flex;
+
 }
+
+.catalog-filter-group {
+  border: none;
+  
+}
+
+.buttons-submit-reset {
+  border: none;
+
+}
+
 
 /*Стили для внутреннего хэдера*/
 .header-inner-title {
@@ -484,6 +525,8 @@ i {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
+  padding: 50px 70px;
+  margin: 0;
   color: #000000;
   text-transform: uppercase;
   background-color: #FFFFFF;
@@ -513,7 +556,7 @@ i {
   box-sizing: border-box;
   margin-bottom: 20px;
   padding: 20px;
-  background-color:transparent;
+  background-color: transparent;
   width: 340px;
   height: 438px;
   border: 1px solid #E6E6E6;
@@ -535,6 +578,7 @@ i {
   color: #000000;
   margin: 16px 0 0;
 }
+
 .product-card-title a {
   color: #000000;
   text-decoration-line: none;
@@ -621,7 +665,7 @@ i {
   flex-direction: row;
 }
 
-.pagination-item-current{
+.pagination-item-current {
   margin-left: 0;
   margin-right: 4px;
   min-width: 60px;

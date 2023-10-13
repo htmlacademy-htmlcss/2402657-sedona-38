@@ -60,6 +60,7 @@ body {
 
 .navigation-logo {
   margin-right: 30px;
+
 }
 
 .navigation-list {
@@ -74,6 +75,11 @@ body {
 
 .navigation-item {
   padding: 20px 16px;
+}
+
+.logo-search {
+  background-image: url("/images/icons/search.svg");
+
 }
 
 .navigation-link {

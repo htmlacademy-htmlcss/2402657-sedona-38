@@ -8,10 +8,11 @@
 <body>
 <div class="page-container">
 <header class="page-header">
-  <nav class="navigation">
-    <a class="navigation-logo" href="index.html">
+  <div class="page-header-wrapper">
+    <a class="page-header-logo-link" href="index.html">
       <img class="page-header-logo" src="images/logos/logo.svg" alt="Логотип Седона." width="140" height="70">
     </a>
+    <nav class="site-navigation">
     <ul class="navigation-list">
       <li class="navigation-item">
         <a class="navigation-link" href="index.html">Главная</a>
@@ -23,20 +24,23 @@
         <a class="navigation-link" href="catalog.html">Гостиницы</a>
       </li>
     </ul>
-  <ul class="navigation-list navigation-user">
-      <li class="navigation-item logo-search">
-        <button type="button" aria-label="Search">Поиск</button>
+  <ul class="navigation-user">
+      <li class="navigation-user-item">
+        <button class="logo-search" type="button" aria-label="Search">
+          <span class="visually-hidden">Поиск</span>
+        </button>
       </li>
-  <li class="navigation-item">
-    <a href="#">
-      <p class="favorites"></p>
+  <li class="navigation-user-item">
+    <a class="navigation-user-favorites-link" href="#">
+      <span class="visually-hidden">Избранное</span>
   </a>
   </li>
-  <li class="navigation-item">
+  <li class="navigation-user-item">
   <button type="button" class="button-want">Хочу сюда!</button>
   </li>
   </ul>
   </nav>
+  </div>
 </header>
 <main class="main-container main-index">
   <section class="hero">

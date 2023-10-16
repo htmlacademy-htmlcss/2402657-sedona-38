@@ -836,6 +836,11 @@ i {
   text-align: center;
 }
 
+.cross-border {
+  margin: 20px 70px 40px;
+  border: solid 1px #E6E6E6;
+}
+
 .pagination {
   margin-left: 70px;
   margin-bottom: 60px;

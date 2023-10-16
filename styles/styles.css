@@ -86,6 +86,18 @@ body {
   padding: 20px 16px;
 }
 
+.navigation-link-active {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-underline-offset: 20px;
+  text-decoration-thickness: 2px;
+  text-transform: capitalize;
+}
 .navigation-link {
   font-family: inherit;
   font-weight: 700;

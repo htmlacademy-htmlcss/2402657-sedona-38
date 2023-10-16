@@ -57,8 +57,9 @@ body {
   display: block;
   width: 140px;
   height: 70px;
-  margin-right: 28px;
+  margin-right: 30px;
 }
+
 /*Навигация по сайту*/
 .site-navigation {
   display: flex;
@@ -80,6 +81,7 @@ body {
   text-decoration: none;
   text-transform: capitalize;
 }
+
 /*Навигация юзера*/
 .navigation-user {
   align-self: flex-start;
@@ -193,6 +195,18 @@ body {
   width: 1200px;
 }
 
+.create-line {
+  width: 60px;
+  margin: 30px 170px;
+  border-top: solid 2px #FFFFFF4D;
+}
+
+.create-line-dark {
+  width: 60px;
+  margin: 30px 170px;
+  border-top: solid 2px #0000004D;
+}
+
 .advantages-item-blue, .advantages-item-white, .advantages-item-azure {
   width: 400px;
   height: 385px;
@@ -203,7 +217,7 @@ body {
 }
 
 /*Удаляю стили для списков на всех страницах (<ul>)*/
-.navigation-list, .navigation-user, .advantages-list, .services-list, .footer-social-list,.catalog-view, .catalog-filter-group, .catalog-filter-list, .product-list, .pagination {
+.navigation-list, .navigation-user, .advantages-list, .services-list, .footer-social-list, .catalog-view, .catalog-filter-group, .catalog-filter-list, .product-list, .pagination {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -302,6 +316,7 @@ body {
   line-height: 28px;
   text-align: center;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .services-name-description {
@@ -564,22 +579,37 @@ i {
 
 .select-control {
   width: 292px;
+  height: 49px;
   margin-left: auto;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
+  border: solid 2px;
+  border-color: #E5E5E5;
+  border-radius: 4px;
+
 }
 
 .button-view-light {
-  color: #000000;
+  padding: 17px 16px;
+  margin-right: 8px;
+  width: 48px;
+  height: 48px;
   background-color: #FFFFFF;
-  border: 2px #FFFFFF;
+  border: solid 2px;
+  border-color: #000000;
+  border-radius: 4px;
 }
 
 .button-view {
-  color: #000000;
+  padding: 17px 16px;
+  margin-right: 8px;
+  width: 48px;
+  height: 48px;
   background-color: #FFFFFF;
-  border: 2px #E5E5E5;
+  border: solid 2px;
+  border-color: #E5E5E5;
+  border-radius: 4px;
 }
 
 .product-list {

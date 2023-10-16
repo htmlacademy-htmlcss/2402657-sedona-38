@@ -37,6 +37,13 @@ body {
   margin: 0;
 }
 
+/*Удаляю стили для списков на всех страницах (<ul>)*/
+.navigation-list, .navigation-user, .advantages-list, .services-list, .footer-social-list, .catalog-view, .catalog-filter-group, .catalog-filter-list, .product-list, .pagination {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .page-container {
   display: flex;
   flex-direction: column;
@@ -46,30 +53,37 @@ body {
   background-color: #FFFFFF;
 }
 
-.page-header-wrapper {
-  display: flex;
-  justify-content: space-between;
-  width: 1060px;
-  margin: 0 auto;
-}
-
 .page-header-logo-link {
   display: block;
-  width: 140px;
-  height: 70px;
+  width: 138px;
+  height: 64px;
   margin-right: 30px;
 }
 
-/*Навигация по сайту*/
-.site-navigation {
-  display: flex;
+.page-header-logo {
+  position: relative;
 }
 
+
+/*Навигация по сайту*/
+.page-header-wrapper {
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.site-navigation {
+  display: flex;
+
+}
 .navigation-list {
-  width: 339px;
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.navigation-item {
+  padding: 20px 16px;
 }
 
 .navigation-link {
@@ -84,19 +98,19 @@ body {
 
 /*Навигация юзера*/
 .navigation-user {
-  align-self: flex-start;
-  margin: 0;
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 auto;
   padding: 0;
-  width: 268px;
   list-style: none;
 }
 
 .logo-search {
   background-image: url("/images/icons/search.svg");
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
-  width: 20px;
-  height: 20px;
+  padding: 22px 12px;
   background-color: transparent;
   border: none;
 }
@@ -104,8 +118,10 @@ body {
 .navigation-user-favorites-link {
   display: inline-flex;
   background-image: url("/images/icons/like.svg");
+  background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 22px 12px;
   width: 20px;
   height: 20px;
 }
@@ -125,6 +141,7 @@ body {
   width: 160px;
   height: 36px;
   border-radius: 4px;
+  margin-left: 20px;
   border: none;
 }
 
@@ -146,7 +163,53 @@ body {
   height: 385px;
 }
 
-.services-title {
+.services-title-advantages {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 69px 290px 25px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.services-description-advantages {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0px 274.5px 69px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.services-title-services {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+  padding: 64px 347px 20px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.services-description-services {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0 355px 64px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.services-title-search {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -156,22 +219,35 @@ body {
   background-color: #FFFFFF;
 }
 
-.services-title-white {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.services-description {
+.services-description-search {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   text-align: center;
   color: #333333;
   background-color: #FFFFFF;
+}
+
+.services-title-white {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.services-title-black {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
 }
 
 .button-search {
@@ -214,13 +290,6 @@ body {
 
 .advantages-list, .visually-hidden {
   text-align: center;
-}
-
-/*Удаляю стили для списков на всех страницах (<ul>)*/
-.navigation-list, .navigation-user, .advantages-list, .services-list, .footer-social-list, .catalog-view, .catalog-filter-group, .catalog-filter-list, .product-list, .pagination {
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .services-item {
@@ -338,6 +407,8 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  margin: 0;
+  padding-bottom: 54px;
   text-align: center;
   color: #FFFFFF;
 
@@ -566,11 +637,15 @@ i {
   border-radius: 4px;
 }
 
+.filter-view {
+  padding: 50px 70px 40px;
+  display: flex;
+}
+
 .search-result {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  padding: 50px 70px;
   margin: 0;
   color: #000000;
   text-transform: uppercase;
@@ -580,6 +655,7 @@ i {
 .select-control {
   width: 292px;
   height: 49px;
+  margin-right: 70px;
   margin-left: auto;
   font-family: inherit;
   font-size: 18px;
@@ -587,11 +663,17 @@ i {
   border: solid 2px;
   border-color: #E5E5E5;
   border-radius: 4px;
-
 }
 
-.button-view-light {
-  padding: 17px 16px;
+.catalog-view {
+  display: flex;
+}
+
+.button-view-active {
+  background-image: url("/images/icons/view-1.svg");
+  background-size: 16px  14px;
+  background-repeat: no-repeat;
+  background-position: center;
   margin-right: 8px;
   width: 48px;
   height: 48px;
@@ -601,9 +683,25 @@ i {
   border-radius: 4px;
 }
 
-.button-view {
-  padding: 17px 16px;
+.button-view-full-screen {
+  background-image: url("/images/icons/view-2.svg");
+  background-size: 16px  14px;
+  background-repeat: no-repeat;
+  background-position: center;
   margin-right: 8px;
+  width: 48px;
+  height: 48px;
+  background-color: #FFFFFF;
+  border: solid 2px;
+  border-color: #E5E5E5;
+  border-radius: 4px;
+}
+
+.button-view-list {
+  background-image: url("/images/icons/view-3.svg");
+  background-size: 16px  14px;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 48px;
   height: 48px;
   background-color: #FFFFFF;
@@ -811,6 +909,8 @@ i {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  margin: 0;
+  padding-bottom: 54px;
   text-align: center;
   color: #333333;
 }

@@ -77,6 +77,7 @@ body {
 }
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -163,6 +164,10 @@ body {
   background-size: cover;
   min-height: 485px;
   text-align: center;
+}
+
+.hero-img {
+  padding-top: 51px;
 }
 
 .services-list {
@@ -578,9 +583,6 @@ body {
 /*Стили для стрелки*/
 .right-arrow {
   transform: rotate(-45deg);
-}
-
-i {
   border: solid #FFFFFF;
   border-width: 0 1px 1px 0;
   display: inline-block;

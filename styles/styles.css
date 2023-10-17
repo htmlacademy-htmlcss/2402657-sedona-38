@@ -33,12 +33,13 @@ body {
 
 .visually-hidden {
   visibility: hidden;
+  line-height: 0px;
   padding: 0;
   margin: 0;
 }
 
 /*Удаляю стили для списков на всех страницах (<ul>)*/
-.navigation-list, .navigation-user, .advantages-list, .services-list, .footer-social-list, .catalog-view, .catalog-filter-group, .catalog-filter-list, .product-list, .pagination {
+.navigation-list, .navigation-user, .breadcrumbs-list, .advantages-list, .services-list, .footer-social-list, .catalog-view, .catalog-filter-group, .catalog-filter-list, .product-list, .pagination {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -227,6 +228,7 @@ body {
 }
 
 .services-title-search {
+  margin: 0 0 20px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -237,6 +239,7 @@ body {
 }
 
 .services-description-search {
+  margin: 0 0 54px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
@@ -260,8 +263,7 @@ body {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
-  margin: 0;
-  padding-bottom: 20px;
+  margin: 0 0 20px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
@@ -562,6 +564,7 @@ body {
   border: none;
   width: 191px;
 
+
 }
 
 
@@ -571,13 +574,23 @@ body {
   font-weight: 700;
   line-height: 78px;
   color: #FFFFFF;
+  margin-top: 0;
   margin-bottom: 8px;
 }
 
 /*Стили для хлебных крошек*/
+.breadcrumbs-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+
+
 .breadcrumbs-item {
   font-size: 16px;
   color: #FFFFFF;
+  padding: 3px 10px 3px 0;
 }
 
 /*Стили для стрелки*/
@@ -738,11 +751,14 @@ body {
   padding: 20px;
   background-color: transparent;
   width: 340px;
-  height: 438px;
+  min-height: 438px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
 }
 
+.product-card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
 .product-card > * {
   margin-top: 16px;
 }
@@ -929,8 +945,7 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-  margin: 0;
-  padding-bottom: 54px;
+  margin: 0 0 54px;
   text-align: center;
   color: #333333;
 }

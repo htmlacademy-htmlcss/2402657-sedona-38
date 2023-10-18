@@ -76,6 +76,7 @@ body {
   display: flex;
 
 }
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -100,6 +101,7 @@ body {
   text-decoration-thickness: 2px;
   text-transform: capitalize;
 }
+
 .navigation-link {
   font-family: inherit;
   font-weight: 700;
@@ -541,6 +543,7 @@ body {
 
 .fieldset-container {
   display: flex;
+  justify-content: space-between;
 
 }
 
@@ -548,23 +551,28 @@ body {
   border: none;
   width: 150px;
   padding: 0;
-  margin: 0;
   border: none;
 }
 
-.catalog-filter-title {
+.catalog-price {
+  width: 150px;
   padding: 0;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-transform: capitalize;
+  border: none;
+}
+
+.catalog-price-container {
+  display: flex;
+}
+
+.catalog-filter-group:not(:first-child) {
+  margin-left: 70px;
 }
 
 .buttons-submit-reset {
   border: none;
   width: 191px;
-
-
+  margin-top: 54px;
+  margin-left: 70px;
 }
 
 
@@ -606,13 +614,33 @@ body {
   color: #FFFFFF;
   text-decoration-line: none;
 }
+fieldset {
+  margin: 0;
+  padding: 0;
+}
 
+.fieldset-wrapper {
+  display: flex;
+}
 /*Стили для заголовка фильтра */
 .catalog-filter-title {
+  margin-bottom: 32px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
   color: #FFFFFF;
+}
+
+.catalog-price-title {
+  margin-bottom: 32px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.catalog-filter-item:not(:first-child) {
+  margin-top: 16px;
 }
 
 /*Стили для лейбла фильтра */
@@ -622,14 +650,37 @@ body {
   color: #FFFFFF;
 }
 
+.price-range {
+  background-color: #F2F2F2;
+  position: relative;
+  z-index: 1;
+}
+
 .price-input {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   color: #000000;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 45px;
+  background: transparent;
+  width: 143px;
+  height: 48px;
+  position: relative;
+  z-index: 2;
 }
 
+.price-slider {
+  display: block;
+  width: 100%;
+  margin-top: 36px;
+}
+
+.price-slider-input {
+  width: 100%;
+}
 /*Стили для границ выбора */
 .range-title {
   font-size: 18px;
@@ -637,6 +688,10 @@ body {
   line-height: 24px;
   color: #000000;
   text-align: right;
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 12px;
 }
 
 .button-submit, .button-reset {
@@ -649,6 +704,7 @@ body {
 }
 
 .button-submit {
+  margin-bottom: 32px;
   background-color: #82B3D3;
   width: 191px;
   height: 36px;
@@ -698,7 +754,7 @@ body {
 
 .button-view-active {
   background-image: url("/images/icons/view-1.svg");
-  background-size: 16px  14px;
+  background-size: 16px 14px;
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 8px;
@@ -712,7 +768,7 @@ body {
 
 .button-view-full-screen {
   background-image: url("/images/icons/view-2.svg");
-  background-size: 16px  14px;
+  background-size: 16px 14px;
   background-repeat: no-repeat;
   background-position: center;
   margin-right: 8px;
@@ -726,7 +782,7 @@ body {
 
 .button-view-list {
   background-image: url("/images/icons/view-3.svg");
-  background-size: 16px  14px;
+  background-size: 16px 14px;
   background-repeat: no-repeat;
   background-position: center;
   width: 48px;
@@ -759,6 +815,7 @@ body {
 .product-card:not(:nth-child(3n)) {
   margin-right: 20px;
 }
+
 .product-card > * {
   margin-top: 16px;
 }

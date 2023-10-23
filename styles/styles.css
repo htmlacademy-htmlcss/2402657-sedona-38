@@ -664,6 +664,16 @@ fieldset {
   background-color: #F2F2F2;
   position: relative;
   z-index: 1;
+  overflow: hidden;
+}
+
+.price-range:first-child {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+}
+
+.price-range:last-child {
+  border-radius: 0 4px 4px 0;
 }
 
 .price-input {
@@ -680,6 +690,7 @@ fieldset {
   height: 48px;
   position: relative;
   z-index: 2;
+  border: none;
 }
 
 .price-slider {
@@ -983,7 +994,6 @@ fieldset {
 
 .pagination-current {
   color: #000000;
-  background-color: #F2F2F2;
   text-decoration: none;
   line-height: 36px;
   font-weight: 700;

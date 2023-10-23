@@ -32,10 +32,16 @@ body {
 }
 
 .visually-hidden {
-  visibility: hidden;
-  line-height: 0px;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
-  margin: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*Удаляю стили для списков на всех страницах (<ul>)*/
@@ -328,6 +334,14 @@ body {
   margin-top: 102px;
 }
 
+.advantages-description-white {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .advantages-item-blue {
   background-color: #82B3D3;
 }
@@ -337,13 +351,7 @@ body {
   display: flex;
 }
 
-.advantages-description-white {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 21px;
-  text-align: center;
-  color: #FFFFFF;
-}
+
 
 .advantages-title {
   font-size: 24px;
@@ -496,6 +504,8 @@ body {
   text-align: center;
   background-color: #FFFFFF;
   height: 120px;
+  display: flex;
+  align-items: center;
 }
 
 .footer-container {

@@ -186,7 +186,10 @@ body {
 
 .services-item-azure, .services-item {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
+  display: block;
+  box-sizing: border-box;
+  padding: 81px 85px;
 }
 
 .services-title-advantages {
@@ -300,19 +303,19 @@ body {
 
 .create-line {
   width: 60px;
-  margin: 30px 170px;
+  margin: 0 85px 30px;
   border-top: solid 2px #FFFFFF4D;
 }
 
 .create-line-dark {
   width: 60px;
-  margin: 30px 170px;
+  margin: 0 85px 30px;
   border-top: solid 2px #0000004D;
 }
 
 .advantages-item-blue, .advantages-item-white, .advantages-item-azure {
   width: 400px;
-  height: 385px;
+  min-height: 385px;
 }
 
 .advantages-list, .visually-hidden {
@@ -331,7 +334,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin-top: 102px;
+  margin: 0 27.5px 30px;
 }
 
 .advantages-description-white {
@@ -340,15 +343,24 @@ body {
   line-height: 21px;
   text-align: center;
   color: #FFFFFF;
+  margin: 0;
 }
 
 .advantages-item-blue {
   background-color: #82B3D3;
+  display: block;
+  box-sizing: border-box;
+  padding: 102px 85px;
 }
 
 /*делаю список с фото из инлайного элемента на флекс, чтобы ушел баг с отсупом под фоткой*/
 .advantages-photo {
   display: flex;
+}
+
+.advantages-img {
+  height: 100%;
+  object-fit: cover;
 }
 
 
@@ -360,7 +372,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  margin-top: 102px;
+  margin: 0 27.5px 30px;
+
 }
 
 .advantages-description {
@@ -369,14 +382,21 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 .advantages-item-white {
   background-color: #FFFFFF;
+  display: block;
+  box-sizing: border-box;
+  padding: 112.5px 85px;
 }
 
 .advantages-item-azure {
   background-color: #83B3D333;
+  display: block;
+  box-sizing: border-box;
+  padding: 112.5px 85px;
 }
 
 .services-item-azure {
@@ -389,7 +409,8 @@ body {
   background-repeat: no-repeat;
   width: 77px;
   height: 72px;
-  margin: 81px 162.5px 30px 162.5px;
+  margin: 0 77.5px 30px;
+
 }
 
 .image-food {
@@ -397,7 +418,7 @@ body {
   background-repeat: no-repeat;
   width: 76px;
   height: 72px;
-  margin: 81px 163.5px 31px 162.5px;
+  margin: 0 77.5px 30px;
 }
 
 .image-gifts {
@@ -405,7 +426,7 @@ body {
   background-repeat: no-repeat;
   width: 76px;
   height: 76px;
-  margin: 81px 162.5px 30px 162.5px;
+  margin: 0 77.5px 30px;
 }
 
 .services-name {
@@ -415,6 +436,9 @@ body {
   text-align: center;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 30px;
+
 }
 
 .services-name-description {
@@ -423,6 +447,7 @@ body {
   line-height: 21px;
   text-align: center;
   color: #333333;
+  margin: 0;
 }
 
 .search {
@@ -817,9 +842,9 @@ fieldset {
 .product-list {
   margin-left: 70px;
   margin-right: 70px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 340px);
 }
 
 .product-card {

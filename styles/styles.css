@@ -80,7 +80,6 @@ body {
 
 .site-navigation {
   display: flex;
-
 }
 
 .navigation-list {
@@ -95,19 +94,6 @@ body {
   padding: 20px 16px;
 }
 
-.navigation-link-active {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: underline;
-  text-decoration-color: #756257;
-  text-underline-offset: 24px;
-  text-decoration-thickness: 2px;
-  text-transform: capitalize;
-}
-
 .navigation-link {
   font-family: inherit;
   font-weight: 700;
@@ -117,6 +103,7 @@ body {
   text-decoration: none;
   text-transform: capitalize;
 }
+
 
 /*Навигация юзера*/
 .navigation-user {
@@ -133,6 +120,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   padding: 22px 12px;
+  margin-right: 10px;
   background-color: transparent;
   border: none;
 }
@@ -294,6 +282,25 @@ body {
   height: 52px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+}
+
+.button-search:hover {
+  background-color: #615048;
+}
+
+.button-search:focus {
+  background-color: #615048;
+}
+
+.button-search:active {
+  background-color: #756157;
+  color: #FFFFFF4D;
+}
+
+.button-search:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 .advantages-list {
@@ -363,7 +370,6 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
 
 
 .advantages-title {
@@ -486,22 +492,23 @@ body {
   justify-content: center
 }
 
-.field {
+.field-subscribe {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
   color: #000000;
   background-color: #F2F2F2;
-  padding-left: 20px;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 0 0 20px;
   width: 452px;
   height: 52px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
   border: none;
+}
+
+.field-subscribe:focus {
+  border-color: #83B3D3;
 }
 
 .button-subscribe {
@@ -519,7 +526,20 @@ body {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border: none;
+  cursor: pointer;
+}
 
+.button-subscribe:hover {
+  background-color: #68A2CA;
+}
+
+.button-subscribe:focus {
+  background-color: #68A2CA;
+}
+
+.button-subscribe:active {
+  background-color: #68A2CA;
+  color: #FFFFFF4D;
 }
 
 .page-footer {
@@ -542,6 +562,18 @@ body {
   align-self: center;
 }
 
+.footer-html-link:hover {
+  fill: #756157;
+}
+
+.footer-html-link:focus {
+  fill: #756157;
+}
+
+.footer-html-link:active {
+  fill: #7561574D;
+}
+
 .social-link {
   display: inline-flex;
   width: 47px;
@@ -550,16 +582,28 @@ body {
   background-position: center;
 }
 
-.button-social-vk {
-  background-image: url("/images/icons/vk.svg");
+.button-social-vk, .button-social-tg, .button-social-youtube {
+  fill: #83B3D3;
 }
 
-.button-social-tg {
-  background-image: url("/images/icons/telegram.svg");
+.footer-social-item a {
+  min-width: 47px;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.button-social-youtube {
-  background-image: url("/images/icons/youtube.svg");
+.footer-social-item a:hover {
+  fill: #68A2CA;
+}
+
+.footer-social-item a:focus {
+  fill: #68A2CA;
+}
+
+.footer-social-item a:active {
+  fill: #68A2CA4D;
 }
 
 /*Cтили для страницы catalog*/
@@ -583,7 +627,6 @@ body {
   border: none;
   width: 150px;
   padding: 0;
-  border: none;
 }
 
 .catalog-price {
@@ -606,7 +649,6 @@ body {
   margin-top: 54px;
   margin-left: 70px;
 }
-
 
 /*Стили для внутреннего хэдера*/
 .header-inner-title {
@@ -633,19 +675,37 @@ body {
   padding: 3px 10px 3px 0;
 }
 
+.breadcrumbs-link-current:hover {
+  color: #FFFFFF99;
+  cursor: pointer;
+}
+
+.breadcrumbs-link-current:focus {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.breadcrumbs-link-current:active {
+  color: #FFFFFF4D;
+  cursor: pointer;
+}
+
 /*Стили для стрелки*/
 .right-arrow {
-  transform: rotate(-45deg);
-  border: solid #FFFFFF;
-  border-width: 0 1px 1px 0;
   display: inline-block;
-  padding: 3px;
+  margin-bottom: 2px;
+  width: 6.393px;
+  height: 6.393px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
 }
 
 .breadcrumbs-link {
   color: #FFFFFF;
   text-decoration-line: none;
 }
+
 fieldset {
   margin: 0;
   padding: 0;
@@ -654,6 +714,7 @@ fieldset {
 .fieldset-wrapper {
   display: flex;
 }
+
 /*Стили для заголовка фильтра */
 .catalog-filter-title {
   margin-bottom: 32px;
@@ -688,6 +749,7 @@ fieldset {
   z-index: 1;
   overflow: hidden;
 }
+
 
 .price-range:first-child {
   border-radius: 4px 0 0 4px;
@@ -724,6 +786,7 @@ fieldset {
 .price-slider-input {
   width: 100%;
 }
+
 /*Стили для границ выбора */
 .range-title {
   font-size: 18px;
@@ -753,6 +816,20 @@ fieldset {
   height: 36px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #68A2CA;
+}
+
+.button-submit:focus {
+  background-color: #68A2CA;
+}
+
+.button-submit:active {
+  background-color: #82B3D3;
+  color: #FFFFFF4D;
 }
 
 .button-reset {
@@ -761,6 +838,24 @@ fieldset {
   width: 191px;
   height: 36px;
   border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-reset:hover{
+  opacity: 0.6;
+}
+
+
+.button-reset:focus {
+  border: solid 3px #83B3D3;
+}
+
+.button-reset:active {
+  opacity: 0.3;
+}
+
+.button-reset:disabled {
+  opacity: 0.1;
 }
 
 .filter-view {
@@ -776,6 +871,8 @@ fieldset {
   color: #000000;
   text-transform: uppercase;
   background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
 }
 
 .select-control {
@@ -783,16 +880,33 @@ fieldset {
   height: 49px;
   margin-right: 70px;
   margin-left: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
-  border: solid 2px;
-  border-color: #E5E5E5;
+  border: solid 2px #E5E5E5;
   border-radius: 4px;
+}
+
+.select-control:hover{
+  border: solid 2px #68A2CA;
+}
+
+.select-control:focus{
+  border: solid 2px #68A2CA;
+}
+
+.select-control:disabled{
+  border: solid 2px #0000004D;
 }
 
 .catalog-view {
   display: flex;
+}
+.catalog-view-item button {
+  cursor: pointer;
 }
 
 .button-view-active {
@@ -804,8 +918,7 @@ fieldset {
   width: 48px;
   height: 48px;
   background-color: #FFFFFF;
-  border: solid 2px;
-  border-color: #000000;
+  border: solid 2px #E5E5E5;
   border-radius: 4px;
 }
 
@@ -818,8 +931,7 @@ fieldset {
   width: 48px;
   height: 48px;
   background-color: #FFFFFF;
-  border: solid 2px;
-  border-color: #E5E5E5;
+  border: solid 2px #E5E5E5;
   border-radius: 4px;
 }
 
@@ -831,9 +943,20 @@ fieldset {
   width: 48px;
   height: 48px;
   background-color: #FFFFFF;
-  border: solid 2px;
-  border-color: #E5E5E5;
+  border: solid 2px #E5E5E5;
   border-radius: 4px;
+}
+
+.catalog-view button:hover {
+  border: solid 2px #000000;
+}
+
+.catalog-view button:focus {
+  border: solid 2px #68A2CA;
+}
+
+.catalog-view button:active {
+  border: solid 2px #68A2CA;
 }
 
 .product-list {
@@ -906,6 +1029,26 @@ fieldset {
   border: none;
 }
 
+.product-card-button-detail:hover {
+  background-color: #615048;
+  cursor: pointer;
+}
+
+.product-card-button-detail:focus {
+  background-color: #615048;
+  cursor: pointer;
+}
+
+.product-card-button-detail:active {
+  background-color: #756157;
+  cursor: pointer;
+}
+
+.product-card-detail-link:active{
+  color: #FFFFFF4D;
+  cursor: pointer;
+}
+
 .product-card-detail-link {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
@@ -929,8 +1072,50 @@ fieldset {
   border: none;
 }
 
+.product-card-button-like:hover {
+  background-color: #68A2CA;
+  cursor: pointer;
+}
+
+.product-card-button-like:focus {
+  background-color: #68A2CA;
+  cursor: pointer;
+}
+
+.product-card-button-like:active {
+  background-color: #82B3D3;
+  color: #FFFFFF4D;
+  cursor: pointer;
+}
+
+.product-card-button-like:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+  cursor: default;
+}
+
 .product-card-button-in-favorites {
   background-color: #7DB54F;
+  cursor: pointer;
+}
+
+.product-card-button-in-favorites:hover {
+  background-color: #6C9E42;
+}
+
+.product-card-button-in-favorites:focus {
+  background-color: #6C9E42;
+}
+
+.product-card-button-in-favorites:active {
+  background-color: #7DB54F;
+  color: #FFFFFF4D;
+}
+
+.product-card-button-in-favorites:active:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+  cursor: default;
 }
 
 .card-rate {
@@ -978,6 +1163,22 @@ fieldset {
   border-radius: 4px;
   margin-left: 4px;
   margin-right: 4px;
+}
+
+.pagination-item:hover {
+  background-color: #68A2CA;
+}
+
+.pagination-item:focus {
+  background-color: #68A2CA;
+}
+
+.pagination-item:active {
+  background-color: #82B3D3;
+}
+
+.pagination-link:active {
+  color: #FFFFFF4D;
 }
 
 .pagination-item-dots {
@@ -1053,7 +1254,17 @@ fieldset {
   text-decoration-line: none;
 }
 
+.footer-phone a:hover {
+  color: #756157;
+}
 
+.footer-phone a:focus {
+  color: #756157;
+}
+
+.footer-phone a:active {
+  color: #7561574D;
+}
 
 
 

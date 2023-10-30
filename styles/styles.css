@@ -187,6 +187,25 @@ body {
   height: 36px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
+}
+
+.button-want:hover {
+  background-color: #615048;
+}
+
+.button-want:focus {
+  background-color: #615048;
+}
+
+.button-want:active {
+  background-color: #756157;
+  color: #FFFFFF4D;
+}
+
+.button-want:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
 }
 
 .main-container {
@@ -218,16 +237,19 @@ body {
   padding: 81px 85px;
 }
 
+.advantages-title-wrapper {
+  padding: 69px 274.5px;
+}
+
 .services-title-advantages {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   text-align: center;
-  margin: 0;
-  padding: 69px 290px 25px;
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
+  margin:0 0 25px;
 }
 
 .services-description-advantages {
@@ -235,10 +257,13 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  margin: 0;
-  padding: 0px 274.5px 69px;
   color: #333333;
   background-color: #FFFFFF;
+  margin:0 0 25px;
+}
+
+.services-title-wrapper {
+  padding: 64px 347.5px;
 }
 
 .services-title-services {
@@ -246,8 +271,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-align: center;
-  margin: 0;
-  padding: 64px 347px 20px;
+  margin: 0 0 20px;
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
@@ -259,7 +283,6 @@ body {
   line-height: 26px;
   text-align: center;
   margin: 0;
-  padding: 0 355px 64px;
   color: #333333;
   background-color: #FFFFFF;
 }
@@ -577,6 +600,11 @@ body {
   color: #FFFFFF4D;
 }
 
+.button-subscribe:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
+
 .page-footer {
   text-align: center;
   background-color: #FFFFFF;
@@ -865,6 +893,11 @@ fieldset {
   color: #FFFFFF4D;
 }
 
+.button-submit:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
+
 .button-reset {
   border: none;
   background-color: transparent;
@@ -1059,26 +1092,23 @@ fieldset {
   height: 36px;
   border-radius: 4px;
   border: none;
+  cursor: pointer
 }
 
 .product-card-button-detail:hover {
   background-color: #615048;
-  cursor: pointer;
 }
 
 .product-card-button-detail:focus {
   background-color: #615048;
-  cursor: pointer;
 }
 
 .product-card-button-detail:active {
   background-color: #756157;
-  cursor: pointer;
 }
 
 .product-card-detail-link:active{
   color: #FFFFFF4D;
-  cursor: pointer;
 }
 
 .product-card-detail-link {
@@ -1102,28 +1132,25 @@ fieldset {
   height: 36px;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .product-card-button-like:hover {
   background-color: #68A2CA;
-  cursor: pointer;
 }
 
 .product-card-button-like:focus {
-  background-color: #68A2CA;
-  cursor: pointer;
+  background-color: #68A2CA;;
 }
 
 .product-card-button-like:active {
   background-color: #82B3D3;
   color: #FFFFFF4D;
-  cursor: pointer;
 }
 
 .product-card-button-like:disabled {
   background-color: #E5E5E5;
   color: #FFFFFF;
-  cursor: default;
 }
 
 .product-card-button-in-favorites {

@@ -56,6 +56,10 @@ body {
   height: 100%;
   background-color: #F2F2F2CC;
 }
+/*скрытие модального окна*/
+.modal-container-close {
+  /*display: none;*/
+}
 
 .modal {
   position: relative;

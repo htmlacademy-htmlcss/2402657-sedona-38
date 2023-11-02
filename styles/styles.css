@@ -75,8 +75,8 @@ body {
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 80px;
-  right: 54px;
+  top: 87px;
+  right: 52px;
   width: 52px;
   height: 52px;
   border: none;
@@ -160,10 +160,48 @@ body {
   background-color: #F2F2F2;
 }
 
+.calendar-icon-in {
+  position: absolute;
+  right: 93px;
+  top: 205px;
+  fill: #000000;
+}
+
+.calendar-icon-out {
+  position: absolute;
+  right: 93px;
+  top: 300px;
+  fill: #000000;
+}
+
+/*.modal-button-minus {*/
+/*  position: absolute;*/
+/*  width: 20px;*/
+/*  height: 20px;*/
+/*  border: solid 3px black;*/
+/*  background-color: transparent;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.modal-button-minus:focus {*/
+/*  border: solid 3px #82B3D3;*/
+/*  border-radius: 4px;*/
+/*}*/
+
+/*.button-minus-icon {*/
+/*  fill: #7561574D;*/
+/*}*/
+
+/*.button-minus-icon:hover {*/
+/*  fill: #000000;*/
+/*}*/
+
+
+
 .modal-message-error {
   position: absolute;
-  top: 239px;
-  left: 228px;
+  top: 240px;
+  left: 227px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -173,8 +211,8 @@ body {
 .modal-message {
   position: absolute;
   position: absolute;
-  top: 334px;
-  left: 228px;
+  top: 336px;
+  left: 227px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -202,21 +240,24 @@ body {
   align-items: center;
 }
 
-.tooltip-toggle {
+.children-tooltip-toggle {
   position: absolute;
-  top: 392px;
-  left: 462px;
-  width: 26px;
-  height: 26px;
+  top: 390px;
+  left: 457px;
   border: none;
-  border-radius: 50px;
+  background-color: transparent;
   cursor: pointer;
-  color: #FFFFFF;
-  background-color: #83B3D3;
-  /*background-image: url("/images/icons/information.svg");*/
+}
+
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
 }
 
 .modal-button-search {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
   grid-column: span 2;
   height: 60px;
   padding: 18px 256.5px;
@@ -1049,34 +1090,28 @@ fieldset {
   border: none;
 }
 
-.range {
+/*ползунок выбора цены*/
+.range-scale {
   position: relative;
-  width: 287px;
+  margin-top: 36px;
+  width: 226px;
+  height: 4px;
+  background-color: #FFFFFF;
 }
 
 .range-bar {
   position: absolute;
   width: 287px;
   height: 4px;
-  background-color: gray;
-}
-
-.range-scale {
-  position: relative;
-  width: 226px;
-  height: 4px;
-  margin-top: 36px;
-  margin-bottom: 16px;
-  border-radius: 2px;
   background-color: #FFFFFF;
+  opacity: 0.3;
 }
 
 .range-toggle {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #ffffff;
-  border: none;
+  background-color: #FFFFFF;
   border-radius: 5px;
   cursor: pointer;
 }
@@ -1091,26 +1126,6 @@ fieldset {
   bottom: -8px;
 }
 
-.range-scale {
-  position: relative;
-  width: 226px;
-  height: 4px;
-  margin-top: 36px;
-  margin-bottom: 16px;
-  background-color: #FFFFFF;
-  border-radius: 2px;
-}
-
-.range-toggle {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #ffffff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .range-toggle:hover {
   background-color: #FFFFFF;
 }
@@ -1119,7 +1134,6 @@ fieldset {
 .range-toggle:focus {
   outline: 3px solid #83B3D3;
 }
-
 
 /*Стили для границ выбора */
 .range-title {
@@ -1602,5 +1616,26 @@ fieldset {
   color: #7561574D;
 }
 
+.range{
+  position: relative;
+  width: 287px;
+}
 
+
+/*Рейтинг*/
+.rating-stars {
+  display: flex;
+  column-gap: 6px;
+  align-self: center;
+}
+
+.star {
+  display: inline-block;
+  width: 18px;
+  height: 17px;
+  background-image: url("/images/icons/rating-star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
 

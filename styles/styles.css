@@ -58,7 +58,7 @@ body {
 }
 /*скрытие модального окна*/
 .modal-container-close {
-  /*display: none;*/
+  display: none;
 }
 
 .modal {

@@ -197,7 +197,7 @@
         <form class="modal-form" method="post" action="https://echo.htmlacademy.ru/">
           <div class="input-wrapper modal-date-in">
             <label for="date-in" class="input-title date-in-title">Дата Заезда:</label>
-            <input class="modal-input date-in-input" type="text" placeholder="27 апреля 2020" name="date-in" id="date-in">
+            <input class="modal-input date-in-input" type="text" placeholder="Укажите дату" name="date-in" id="date-in">
             <svg class="calendar-icon-in" width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z"/>
               <path d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z"/>
@@ -215,7 +215,7 @@
           </div>
           <div class="input-wrapper modal-date-out">
             <label for="date-out" class="input-title date-out-title">Дата Выезда:</label>
-            <input class="modal-input date-out-input" type="text" name="date-out" id="date-out" placeholder="1 сентября 2023">
+            <input class="modal-input date-out-input" type="text" name="date-out" id="date-out" placeholder="Укажите дату">
             <svg class="calendar-icon-out " width="16" height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.75 10C6.05 10 6.25 9.8 6.25 9.5C6.25 9.2 6.05 9 5.75 9C5.45 9 5.25 9.2 5.25 9.5C5.25 9.8 5.45 10 5.75 10Z"/>
               <path d="M15 2H13V0H12V2H4V0H3V2H1C0.4 2 0 2.4 0 3V14C0 14.5 0.4 15 1 15H15C15.5 15 16 14.5 16 14V3C16 2.4 15.5 2 15 2ZM15 14H1V7H15V14ZM1 6V3H3V5H4V3H12V5H13V3H15V6H1Z"/>
@@ -234,43 +234,49 @@
             <div class="input-wrapper modal-people-item-adults">
               <label for="adults" class="input-title adults-title">Взрослые:</label>
               <div class="modal-number-wrap">
-<!--                <button class="modal-button-minus" type="button" name="minus-adults" aria-label="Уменьшить количетство взрослых">-->
-<!--                  <svg class="button-minus-icon" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--                    <path d="M3 9V11H17V9H3Z" fill-opacity="0.3"/>-->
-<!--                  </svg>-->
-<!--                </button>-->
+                <button class="modal-button-minus" type="button" name="minus-adults" aria-label="Уменьшить количетство взрослых">
+                  <svg class="modal-button-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" />
+                  </svg>
+                </button>
                 <input class="modal-input adults-input" type="number" name="adults" id="adults" min="1" max="100"
                        placeholder="2">
-<!--                <button class="modal-button-plus" type="button" name="plus-adults" aria-label="Увеличить количетство взрослых">-->
-<!--                  <span class="icon-plus"></span>-->
-<!--                </button>-->
+                <button class="modal-button-plus" type="button" name="plus-adults" aria-label="Увеличить количетство взрослых">
+                  <svg class="modal-button-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                  </svg>
+                </button>
               </div>
             </div>
             <div class="input-wrapper modal-people-item">
               <div class="children-wrapper">
               <div class="modal-children-notice">
                 <label for="children" class="input-title children-title">Дети:</label>
-                <span class="tooltip">
-                  <button class="tooltip-toggle" type="button">i
-<!--                    <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg">-->
-<!--                      <g clip-path="url(#a)">-->
-<!--                        <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />-->
-<!--                      </g>-->
-<!--                    </svg>-->
+                <div class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <svg class="tooltip-icon" width="1" height="9" viewBox="0 0 1 9" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#a)">
+                        <path d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z" />
+                      </g>
+                    </svg>
                   </button>
                   <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст
                     которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                  </span>
+                </div>
               </div>
               <div class="modal-number-wrap">
-<!--                <button class="modal-minus" type="button" name="minus-adults" aria-label="Уменьшить количетство детей">-->
-<!--                  <span class="icon-minus"></span>-->
-<!--                </button>-->
+                <button class="modal-button-minus" type="button" name="minus-children" aria-label="Уменьшить количетство взрослых">
+                  <svg class="modal-button-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" />
+                  </svg>
+                </button>
                 <input class="modal-input children-input" type="number" name="children" id="children" min="1"
                        max="100" placeholder="2">
-<!--                <button class="modal-plus" type="button" name="plus-adults" aria-label="Увеличить количетство взрослых">-->
-<!--                  <span class="icon-plus"></span>-->
-<!--                </button>-->
+                <button class="modal-button-plus" type="button" name="plus-children" aria-label="Увеличить количетство взрослых">
+                  <svg class="modal-button-svg" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                  </svg>
+                </button>
               </div>
             </div>
             </div>

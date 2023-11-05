@@ -43,6 +43,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
 /*Модальное окно*/
 .modal-container {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -56,6 +57,7 @@ body {
   height: 100%;
   background-color: #F2F2F2CC;
 }
+
 /*скрытие модального окна*/
 .modal-container-close {
   display: none;
@@ -128,12 +130,12 @@ body {
 
 .modal-date-in {
   grid-column: span 2;
-  gap:24px;
+  gap: 24px;
 }
 
 .modal-date-out {
   grid-column: span 2;
-  gap:18px;
+  gap: 18px;
 }
 
 .modal-people-item-adults {
@@ -183,11 +185,13 @@ body {
   top: 300px;
   fill: gray;
 }
+
 .modal-number-wrap {
   display: flex;
   background-color: #F2F2F2;
   min-width: 110px;
 }
+
 .modal-button-minus, .modal-button-plus {
   width: 40px;
   height: 48px;
@@ -290,7 +294,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .tooltip-text {
   position: absolute;
   left: 50%;
-  top:41px;
+  top: 41px;
   font-family: "PT Sans", sans-serif;
   background-color: #333333;
   color: #FFFFFF;
@@ -306,6 +310,7 @@ input[type="number"]::-webkit-inner-spin-button {
   transform: translateX(-50%);
   display: none;
 }
+
 /*треугольник у тултипа*/
 .tooltip-text::before {
   content: '';
@@ -360,6 +365,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0 auto;
   background-color: #FFFFFF;
 }
+
 /*Хэдер начало*/
 .page-header-logo-link {
   position: absolute;
@@ -379,6 +385,7 @@ input[type="number"]::-webkit-inner-spin-button {
   margin: 0 auto;
   position: relative;
 }
+
 /*Навигация по сайту*/
 .site-navigation {
   display: flex;
@@ -550,7 +557,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
-  margin:0 0 25px;
+  margin: 0 0 25px;
 }
 
 .services-description-advantages {
@@ -560,7 +567,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: center;
   color: #333333;
   background-color: #FFFFFF;
-  margin:0 0 25px;
+  margin: 0 0 25px;
 }
 
 .services-title-wrapper {
@@ -1130,6 +1137,7 @@ fieldset {
   border-radius: 4px;
   border: solid 3px transparent;
 }
+
 .control-label {
   font-weight: 400;
   font-size: 18px;
@@ -1137,27 +1145,28 @@ fieldset {
   color: #FFFFFF;
 }
 
-.control-input[type="checkbox"]:checked+.control-mark::before,
-.control-input[type="checkbox"]:checked+.control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::before,
+.control-input[type="checkbox"]:checked + .control-mark::after {
   position: absolute;
   height: 1px;
   background-color: #3F5E72;
   content: "";
 }
 
-.control-input[type="checkbox"]:checked+.control-mark::before {
+.control-input[type="checkbox"]:checked + .control-mark::before {
   width: 5px;
   top: 8px;
   left: 2px;
   transform: rotate(45deg);
 }
 
-.control-input[type="checkbox"]:checked+.control-mark::after {
+.control-input[type="checkbox"]:checked + .control-mark::after {
   top: 7px;
   left: 5px;
   width: 9px;
   transform: rotate(-45deg);
 }
+
 /*radio*/
 .control-mark-radio {
   position: absolute;
@@ -1179,7 +1188,7 @@ fieldset {
   background-color: #FFFFFF;
 }
 
-.control-input[type="radio"]:checked+.control-mark-radio::before {
+.control-input[type="radio"]:checked + .control-mark-radio::before {
   content: "";
   position: absolute;
   top: 2px;
@@ -1188,7 +1197,6 @@ fieldset {
   height: 10px;
   border-radius: 50px;
   background-color: #3F5E72;
-
 }
 
 .price-range {
@@ -1328,7 +1336,7 @@ fieldset {
   cursor: pointer;
 }
 
-.button-reset:hover{
+.button-reset:hover {
   opacity: 0.6;
 }
 
@@ -1380,21 +1388,22 @@ fieldset {
   background-position: right 21px center;
 }
 
-.select-control:hover{
+.select-control:hover {
   border: solid 2px #68A2CA;
 }
 
-.select-control:focus{
+.select-control:focus {
   border: solid 2px #68A2CA;
 }
 
-.select-control:disabled{
+.select-control:disabled {
   border: solid 2px #0000004D;
 }
 
 .catalog-view {
   display: flex;
 }
+
 .catalog-view-item button {
   cursor: pointer;
 }
@@ -1532,7 +1541,7 @@ fieldset {
   background-color: #756157;
 }
 
-.product-card-detail-link:active{
+.product-card-detail-link:active {
   color: #FFFFFF4D;
 }
 
@@ -1767,7 +1776,7 @@ fieldset {
   color: #7561574D;
 }
 
-.range{
+.range {
   position: relative;
   width: 287px;
 }

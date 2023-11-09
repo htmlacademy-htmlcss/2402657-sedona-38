@@ -59,9 +59,9 @@ body {
 }
 
 /*скрытие модального окна*/
-.modal-container-close {
-  display: none;
-}
+/*.modal-container-close {*/
+/*  display: none;*/
+/*}*/
 
 .modal {
   position: relative;
@@ -74,15 +74,19 @@ body {
   border-radius: 30px;
 }
 
+.model-title-wrapper {
+  position: relative;
+}
+
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 87px;
-  right: 52px;
+  top: 100%;
+  left: 94%;
   width: 52px;
   height: 52px;
   border: none;
-  background-image: url("/images/icons/close.svg");
+  background-image: url("../images/icons/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -147,6 +151,23 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
+.date-in-title {
+  width: 113px;
+}
+
+.date-out-title {
+  width: 119px;
+}
+
+.adults-title {
+  width: 91px;
+  word-break: break-word;
+}
+
+.children-title {
+  width: 49px;
+  word-break: break-word;
+}
 
 .modal-input {
   font-weight: 700;
@@ -161,6 +182,7 @@ body {
   border-radius: 4px;
   color: #000000;
   background-color: #F2F2F2;
+  border: solid 3px transparent;
 }
 
 .modal-input:hover {
@@ -174,15 +196,17 @@ body {
 
 .calendar-icon-in {
   position: absolute;
-  right: 93px;
-  top: 205px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
   fill: gray;
 }
 
 .calendar-icon-out {
   position: absolute;
-  right: 93px;
-  top: 300px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
   fill: gray;
 }
 
@@ -220,10 +244,17 @@ body {
   fill: #7561574D;
 }
 
+.input-message-wrapper {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
 .modal-message-error {
   position: absolute;
-  top: 240px;
-  left: 227px;
+  top: 100%;
+  left: 20px;
+  margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -232,9 +263,9 @@ body {
 
 .modal-message {
   position: absolute;
-  position: absolute;
-  top: 336px;
-  left: 227px;
+  top: 100%;
+  left: 20px;
+  margin-top: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -242,6 +273,8 @@ body {
 }
 
 .adults-input, .children-input {
+  width: 31px;
+  border: none;
   text-align: center;
   padding: 0;
 }
@@ -1533,39 +1566,35 @@ fieldset {
   color: #333333;
 }
 
-.product-card-button-detail {
-  background-color: #756157;
-  text-transform: uppercase;
+.product-card-button-more {
+  box-sizing: border-box;
   width: 140px;
   min-height: 36px;
   border-radius: 4px;
   border: none;
-  cursor: pointer
-}
-
-.product-card-button-detail:hover {
-  background-color: #615048;
-}
-
-.product-card-button-detail:focus {
-  background-color: #615048;
-}
-
-.product-card-button-detail:active {
-  background-color: #756157;
-}
-
-.product-card-detail-link:active {
-  color: #FFFFFF4D;
-}
-
-.product-card-detail-link {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  color: #FFFFFF;
+  text-transform: uppercase;
   text-decoration: none;
+  word-wrap: break-word;
+  padding: 8px 25px;
+  color: #FFFFFF;
+  background-color: #756157;
+  cursor: pointer;
+}
+
+.product-card-button-more:hover {
+  background-color: #615048;
+}
+
+.product-card-button-more:focus {
+  background-color: #615048;
+}
+
+.product-card-button-more:active {
+  color: #FFFFFF4D;
+  background-color: #756157;
 }
 
 .product-card-button-like, .product-card-button-in-favorites {

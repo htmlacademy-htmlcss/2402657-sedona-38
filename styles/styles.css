@@ -58,6 +58,10 @@ body {
   background-color: #F2F2F2CC;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /*скрытие модального окна*/
 .modal-container-close {
   display: none;
@@ -1829,6 +1833,5 @@ fieldset {
   position: relative;
   width: 287px;
 }
-
 
 

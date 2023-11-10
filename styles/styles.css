@@ -58,10 +58,14 @@ body {
   background-color: #F2F2F2CC;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 /*скрытие модального окна*/
-/*.modal-container-close {*/
-/*  display: none;*/
-/*}*/
+.modal-container-close {
+  display: none;
+}
 
 .modal {
   position: relative;
@@ -842,6 +846,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 30px;
+  word-break: break-word;
 }
 
 .services-name-description {
@@ -1021,11 +1026,13 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /*Cтили для страницы catalog*/
 .filter-container {
+  box-sizing: border-box;
   background-image: url("../images/backgrounds/background-filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 412px;
   max-width: 1200px;
+  line-height: 14px;
   padding: 35px 70px 70px;
   margin: 0 auto;
 }
@@ -1184,6 +1191,7 @@ fieldset {
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
+  margin-left: -6px;
   color: #FFFFFF;
 }
 
@@ -1282,7 +1290,7 @@ fieldset {
 /*ползунок выбора цены*/
 .range-scale {
   position: relative;
-  margin-top: 36px;
+  margin-top: 43px;
   width: 226px;
   height: 4px;
   background-color: #FFFFFF;
@@ -1509,7 +1517,8 @@ fieldset {
   margin-left: 70px;
   margin-right: 70px;
   display: grid;
-  gap: 20px;
+  column-gap: 20px;
+  row-gap: 18px;
   grid-template-columns: repeat(3, 340px);
 }
 
@@ -1536,7 +1545,7 @@ fieldset {
   font-weight: 700;
   line-height: 28px;
   color: #000000;
-  margin: 16px 0 0;
+  margin: 12px 0 0;
 }
 
 .product-card-title a {
@@ -1688,7 +1697,7 @@ fieldset {
 }
 
 .cross-border {
-  margin: 40px 70px 40px;
+  margin: 35px 70px 40px;
   border: solid 1px #E6E6E6;
 }
 
@@ -1783,7 +1792,7 @@ fieldset {
   background-color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 415px;
+  min-height: 420px;
   padding: 96px 40px 104px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -1805,6 +1814,7 @@ fieldset {
   text-align: center;
   color: #000000;
   text-decoration-line: none;
+  margin-left: 24px;
 }
 
 .footer-phone a:hover {
@@ -1823,6 +1833,5 @@ fieldset {
   position: relative;
   width: 287px;
 }
-
 
 

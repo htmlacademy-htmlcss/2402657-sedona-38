@@ -15,6 +15,11 @@
   font-display: swap;
 }
 
+/*браузер Firefox убираю стрелку*/
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 html {
   height: 100%;
 }
@@ -70,7 +75,6 @@ body {
 .modal {
   position: relative;
   margin: auto;
-  padding: 40px;
   background-color: #ffffff;
   width: 717px;
   box-sizing: border-box;
@@ -115,6 +119,7 @@ body {
 }
 
 .modal-title {
+  margin-top: 0;
   margin-bottom: 64px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
@@ -174,6 +179,7 @@ body {
 }
 
 .modal-input {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -182,7 +188,6 @@ body {
   padding-left: 20px;
   padding-right: 60px;
   height: 48px;
-  border: none;
   border-radius: 4px;
   color: #000000;
   background-color: #F2F2F2;
@@ -200,16 +205,16 @@ body {
 
 .calendar-icon-in {
   position: absolute;
-  top: 50%;
-  right: 20px;
+  top: 46%;
+  right: 23px;
   transform: translateY(-50%);
   fill: gray;
 }
 
 .calendar-icon-out {
   position: absolute;
-  top: 50%;
-  right: 20px;
+  top: 46%;
+  right: 23px;
   transform: translateY(-50%);
   fill: gray;
 }
@@ -258,7 +263,7 @@ body {
   position: absolute;
   top: 100%;
   left: 20px;
-  margin-top: 4px;
+  margin-top: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -269,7 +274,7 @@ body {
   position: absolute;
   top: 100%;
   left: 20px;
-  margin-top: 4px;
+  margin-top: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -341,7 +346,6 @@ input[type="number"]::-webkit-inner-spin-button {
   text-transform: none;
   padding: 20px 18px 18px 22px;
   border-radius: 10px;
-  display: block;
   box-sizing: border-box;
   width: 256px;
   transform: translateX(-50%);
@@ -359,6 +363,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .modal-button-search {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -388,7 +393,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 /*Удаляю стили для списков на всех страницах (<ul>)*/
-.navigation-list, .navigation-user, .breadcrumbs-list, .advantages-list, .services-list, .footer-social-list, .catalog-view, .catalog-filter-group, .catalog-filter-list, .product-list, .pagination {
+.navigation-list, .navigation-user, .breadcrumbs-list, .advantages-list, .services-list, .footer-social-list, .catalog-view, .catalog-filter-group, .catalog-filter-list-checkbox, .catalog-filter-list-radio, .product-list, .pagination {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -454,6 +459,14 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration: none;
 }
 
+.navigation-link:hover {
+  color: #756257;
+}
+
+.navigation-link:active {
+  color: #82B3D3;
+}
+
 .navigation-link.navigation-link-active::after {
   position: absolute;
   right: 17px;
@@ -467,6 +480,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /*Навигация юзера*/
 .navigation-user {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -529,7 +543,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: #FFFFFF;
   background-color: #756157;
   min-width: 160px;
-  height: 36px;
+  min-height: 36px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -558,6 +572,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .hero {
+  background-color: aquamarine;
   background-image: url("../images/backgrounds/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -583,7 +598,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .advantages-title-wrapper {
-  padding: 69px 274.5px;
+  padding: 69px 274.5px 64px;
 }
 
 .services-title-advantages {
@@ -594,7 +609,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
-  margin: 0 0 25px;
+  margin: 1px 0 25px;
 }
 
 .services-description-advantages {
@@ -684,7 +699,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-transform: uppercase;
   text-align: center;
   min-width: 376px;
-  height: 52px;
+  min-height: 52px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -862,7 +877,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #FFFFFF;
   text-align: center;
   min-height: 214px;
-  padding: 96px 304px;
+  padding: 96px 304px 95px;
 }
 
 .services-description-index-white {
@@ -904,7 +919,7 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 24px;
   color: #000000;
   background-color: #F2F2F2;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 17px;
   width: 452px;
   height: 52px;
   border-top-left-radius: 4px;
@@ -928,7 +943,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: center;
   padding: 0;
   min-width: 232px;
-  height: 52px;
+  min-height: 52px;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   border: none;
@@ -956,8 +971,9 @@ input[type="number"]::-webkit-inner-spin-button {
 .page-footer {
   text-align: center;
   background-color: #FFFFFF;
-  height: 120px;
+  height: 130px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -976,7 +992,9 @@ input[type="number"]::-webkit-inner-spin-button {
  }
 
 .footer-social-list {
+  width: 142px;
   display: flex;
+  flex-wrap: wrap;
   align-self: center;
 }
 
@@ -1027,6 +1045,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /*Cтили для страницы catalog*/
 .filter-container {
   box-sizing: border-box;
+  background-color: aquamarine;
   background-image: url("../images/backgrounds/background-filter.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -1049,6 +1068,14 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 0;
 }
 
+.catalog-filter-list-checkbox {
+  width: 112px;
+}
+
+.catalog-filter-list-radio {
+  width: 141px;
+}
+
 .catalog-price {
   width: 150px;
   padding: 0;
@@ -1060,7 +1087,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .catalog-filter-group:not(:first-child) {
-  margin-left: 70px;
+  margin-left: 65px;
 }
 
 .buttons-submit-reset {
@@ -1076,22 +1103,44 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 700;
   line-height: 78px;
   color: #FFFFFF;
-  margin-top: 0;
-  margin-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 4px;
 }
 
 /*Стили для хлебных крошек*/
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
-
 .breadcrumbs-item {
+  position: relative;
   font-size: 16px;
   color: #FFFFFF;
   padding: 3px 10px 3px 0;
+  /*margin-left: 10px;*/
+}
+
+.breadcrumbs-link-current {
+  margin-left: 16px;
+}
+
+.breadcrumbs-item::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  transform: rotate(45deg);
+}
+
+.breadcrumbs-item:first-child::after {
+  content: none;
 }
 
 .breadcrumbs-link-current:hover {
@@ -1167,18 +1216,26 @@ fieldset {
   opacity: 0.6;
 }
 
-.control:focus .control-mark {
-  border-color: #83B3D3;
-  background-color: #FFFFFF;
+.control:hover .control-label {
+  opacity: 0.6;
 }
 
 .control:active .control-mark {
   opacity: 0.3;
 }
 
+.control:active .control-label {
+  opacity: 0.3;
+}
+
+.control:focus .control-mark {
+  border-color: #83B3D3;
+  background-color: #FFFFFF;
+}
+
 .control-mark {
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 0;
   width: 15px;
   height: 15px;
@@ -1193,6 +1250,7 @@ fieldset {
   line-height: 23px;
   margin-left: -6px;
   color: #FFFFFF;
+  word-break: break-word;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before,
@@ -1272,7 +1330,7 @@ fieldset {
   line-height: 24px;
   color: #000000;
   box-sizing: border-box;
-  padding-left: 20px;
+  padding-left: 16px;
   padding-right: 45px;
   background: transparent;
   width: 143px;
@@ -1311,15 +1369,16 @@ fieldset {
   background-color: #FFFFFF;
   border-radius: 5px;
   cursor: pointer;
+  border: none;
 }
 
 .toggle-min {
-  left: 0px;
+  left: 0;
   bottom: -8px;
 }
 
 .toggle-max {
-  right: 58px;
+  right: 60px;
   bottom: -8px;
 }
 
@@ -1338,6 +1397,7 @@ fieldset {
   font-weight: 400;
   line-height: 24px;
   color: #000000;
+  opacity: 0.3;
   text-align: right;
   position: absolute;
   z-index: 1;
@@ -1358,7 +1418,7 @@ fieldset {
   margin-bottom: 32px;
   background-color: #82B3D3;
   min-width: 191px;
-  height: 36px;
+  min-height: 36px;
   border-radius: 4px;
   border: none;
   cursor: pointer;
@@ -1386,7 +1446,7 @@ fieldset {
   border: none;
   background-color: transparent;
   min-width: 191px;
-  height: 36px;
+  min-height: 36px;
   border-radius: 4px;
   cursor: pointer;
 }
@@ -1408,8 +1468,9 @@ fieldset {
 }
 
 .filter-view {
-  padding: 50px 70px 40px;
+  padding: 49px 70px 40px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .search-result {
@@ -1420,6 +1481,7 @@ fieldset {
   color: #000000;
   text-transform: uppercase;
   background-color: #FFFFFF;
+  width: 450px;
   display: flex;
   align-items: center;
 }
@@ -1431,7 +1493,7 @@ fieldset {
   margin-left: auto;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 18px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1472,7 +1534,7 @@ fieldset {
   width: 48px;
   height: 48px;
   background-color: #FFFFFF;
-  border: solid 2px #E5E5E5;
+  border: solid 2px #000000;
   border-radius: 4px;
 }
 
@@ -1514,7 +1576,7 @@ fieldset {
 }
 
 .product-list {
-  margin-left: 70px;
+  margin-left: 68px;
   margin-right: 70px;
   display: grid;
   column-gap: 20px;
@@ -1696,14 +1758,7 @@ fieldset {
   text-align: center;
 }
 
-.cross-border {
-  margin: 35px 70px 40px;
-  border: solid 1px #E6E6E6;
-}
-
 .pagination {
-  margin-left: 70px;
-  margin-bottom: 60px;
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -1782,6 +1837,21 @@ fieldset {
   display: block;
 }
 
+.pagination-wrapper {
+  position: relative;
+  margin-top: 79px;
+  margin-left: 69px;
+  margin-bottom: 60px;
+}
+
+.pagination-wrapper::before {
+  content: "";
+  width: 1060px;
+  top:-40px;
+  position: absolute;
+  border: solid 1px #E6E6E6;
+}
+
 .star {
   margin: 0;
   align-self: center;
@@ -1792,7 +1862,7 @@ fieldset {
   background-color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 420px;
+  min-height: 414px;
   padding: 96px 40px 104px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -1814,7 +1884,7 @@ fieldset {
   text-align: center;
   color: #000000;
   text-decoration-line: none;
-  margin-left: 24px;
+  margin-left: 27px;
 }
 
 .footer-phone a:hover {

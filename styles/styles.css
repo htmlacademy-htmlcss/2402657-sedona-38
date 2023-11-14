@@ -36,6 +36,12 @@ body {
   box-sizing: border-box;
 }
 
+.index-page-container, .catalog-page-container {
+  width: 1280px;
+  background-color: #F2F2F2;
+  margin: auto;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -69,7 +75,7 @@ body {
 
 /*скрытие модального окна*/
 .modal-container-close {
-  display: none;
+  /*display: none;*/
 }
 
 .modal {
@@ -540,6 +546,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  padding: 8px 34px;
   color: #FFFFFF;
   background-color: #756157;
   min-width: 160px;
@@ -586,6 +593,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -694,6 +702,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
+  padding: 8px 50px;
   color: #FFFFFF;
   background-color: #756157;
   text-transform: uppercase;
@@ -941,7 +950,7 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: #82B3D3;
   text-transform: uppercase;
   text-align: center;
-  padding: 0;
+  padding: 8px 50px;
   min-width: 232px;
   min-height: 52px;
   border-top-right-radius: 4px;
@@ -1086,6 +1095,10 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
 }
 
+.catalog-price-container:not(:first-child) {
+  margin-top: 32px;
+}
+
 .catalog-filter-group:not(:first-child) {
   margin-left: 65px;
 }
@@ -1193,7 +1206,6 @@ fieldset {
 }
 
 .catalog-price-title {
-  margin-bottom: 32px;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -1228,7 +1240,7 @@ fieldset {
   opacity: 0.3;
 }
 
-.control:focus .control-mark {
+.control-input:focus + .control-mark {
   border-color: #83B3D3;
   background-color: #FFFFFF;
 }
@@ -1291,7 +1303,7 @@ fieldset {
   opacity: 0.6;
 }
 
-.control:focus .control-mark-radio {
+.control-input:focus + .control-mark-radio {
   border-color: #83B3D3;
   background-color: #FFFFFF;
 }
@@ -1416,6 +1428,8 @@ fieldset {
 
 .button-submit {
   margin-bottom: 32px;
+  padding: 8px 50px;
+  word-break: break-word;
   background-color: #82B3D3;
   min-width: 191px;
   min-height: 36px;
@@ -1443,7 +1457,9 @@ fieldset {
 }
 
 .button-reset {
-  border: none;
+  border: solid 3px transparent;
+  padding: 8px 50px;
+  word-break: break-word;
   background-color: transparent;
   min-width: 191px;
   min-height: 36px;
@@ -1602,6 +1618,11 @@ fieldset {
   text-decoration: none;
 }
 
+.product-card-image {
+  width: 300px;
+  height: 212px;
+}
+
 .product-card-title {
   font-size: 24px;
   font-weight: 700;
@@ -1673,6 +1694,7 @@ fieldset {
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
+  padding: 8px 20px;
   color: #FFFFFF;
   background-color: #82B3D3;
   text-transform: uppercase;
@@ -1702,6 +1724,7 @@ fieldset {
 }
 
 .product-card-button-in-favorites {
+  padding: 8px 18px;
   background-color: #7DB54F;
   cursor: pointer;
 }

@@ -753,18 +753,6 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 1200px;
 }
 
-/*.create-line {*/
-/*  width: 60px;*/
-/*  margin: 0 85px 30px;*/
-/*  border-top: solid 2px #FFFFFF4D;*/
-/*}*/
-
-/*.create-line-dark {*/
-/*  width: 60px;*/
-/*  margin: 0 85px 30px;*/
-/*  border-top: solid 2px #0000004D;*/
-/*}*/
-
 .advantages-item-blue, .advantages-item-white, .advantages-item-azure {
   width: 400px;
   min-height: 385px;
@@ -826,7 +814,6 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 100%;
   object-fit: cover;
 }
-
 
 .advantages-title {
   position: relative;

@@ -167,6 +167,7 @@ body {
   font-size: 20px;
   line-height: 24px;
 }
+
 .date-in-title {
   width: 113px;
 }
@@ -517,7 +518,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .logo-search:hover {
-  fill:#756257;
+  fill: #756257;
 }
 
 .logo-search:active {
@@ -533,7 +534,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .logo-like:hover {
-  fill:#756257;
+  fill: #756257;
 }
 
 .logo-like:active {
@@ -970,12 +971,12 @@ input[type="number"]::-webkit-inner-spin-button {
   height: 52px;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
-  border:solid 3px transparent;
+  border: solid 3px transparent;
 }
 
 .field-subscribe:focus {
   outline: none;
-  border:solid 3px #83B3D3;
+  border: solid 3px #83B3D3;
 }
 
 .button-subscribe {
@@ -1031,11 +1032,11 @@ input[type="number"]::-webkit-inner-spin-button {
   column-gap: 40px;
 }
 
- .footer-html-link {
-   display: flex;
-   align-self: center;
-   justify-self: flex-end;
- }
+.footer-html-link {
+  display: flex;
+  align-self: center;
+  justify-self: flex-end;
+}
 
 .footer-social-list {
   width: 142px;
@@ -1907,7 +1908,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .pagination-wrapper::before {
   content: "";
   width: 1060px;
-  top:-40px;
+  top: -40px;
   position: absolute;
   border: solid 1px #E6E6E6;
 }

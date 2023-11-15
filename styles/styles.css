@@ -498,32 +498,53 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .logo-search {
-  display: flex;
-  padding: 0;
-  background-image: url("../images/icons/search.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px 20px;
-  width: 44px;
-  height: 64px;
-  background-color: transparent;
-  border: none;
+  padding: 22px 12px;
+  fill: black;
+  width: 20px;
+  height: 20px;
   cursor: pointer;
 }
 
-.navigation-user-item:nth-child(2) {
-  margin-right: 20px;
+.navigation-user-item {
+  position: relative;
+  width: 44px;
+  height: 64px;
 }
 
-.navigation-user-item-favorites .navigation-user-favorites-link {
-  position: relative;
+.navigation-user-item-button {
+  width: 180px;
+  height: 64px;
+}
+
+.logo-search:hover {
+  fill:#756257;
+}
+
+.logo-search:active {
+  fill: #82B3D3;
+}
+
+.logo-like {
+  padding: 22px 12px;
+  fill: black;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.logo-like:hover {
+  fill:#756257;
+}
+
+.logo-like:active {
+  fill: #82B3D3;
 }
 
 .navigation-user-item-favorites .navigation-user-favorites-link::after {
   content: "12";
   position: absolute;
-  top: 12px;
-  right: 5px;
+  top: 11px;
+  right: 3px;
   padding: 5px;
   border-radius: 20px;
   background: #7DB54F;
@@ -533,22 +554,13 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 10px;
 }
 
-.navigation-user-favorites-link {
-  display: flex;
-  background-image: url('../images/icons/like.svg');
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 44px;
-  height: 64px;
-}
-
 .button-want {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  margin: 14px 20px;
   padding: 8px 34px;
   color: #FFFFFF;
   background-color: #756157;
@@ -1086,14 +1098,13 @@ input[type="number"]::-webkit-inner-spin-button {
   min-height: 412px;
   max-width: 1200px;
   line-height: 14px;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 56px;
   margin: 0 auto;
 }
 
 .fieldset-container {
   display: flex;
   justify-content: space-between;
-
 }
 
 .catalog-filter-group {
@@ -1126,13 +1137,14 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .catalog-filter-group:not(:first-child) {
   margin-left: 65px;
+  margin-right: 142px;
 }
 
 .buttons-submit-reset {
   border: none;
   width: 191px;
-  margin-top: 54px;
-  margin-left: 70px;
+  margin-top: 50px;
+  margin-left: 58px;
 }
 
 /*Стили для внутреннего хэдера*/
@@ -1212,7 +1224,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-decoration-line: none;
 }
 
-fieldset {
+.catalog-price {
   margin: 0;
   padding: 0;
 }
@@ -1483,7 +1495,7 @@ fieldset {
 
 .button-reset {
   border: solid 3px transparent;
-  padding: 8px 50px;
+  padding: 6px 50px;
   word-break: break-word;
   background-color: transparent;
   min-width: 191px;
@@ -1509,7 +1521,7 @@ fieldset {
 }
 
 .filter-view {
-  padding: 48px 70px 38px;
+  padding: 49px 70px 38px;
   display: flex;
   flex-wrap: wrap;
 }

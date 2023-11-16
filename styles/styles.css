@@ -37,7 +37,6 @@ body {
 }
 
 .index-page-container, .catalog-page-container {
-  width: 1280px;
   background-color: #F2F2F2;
   margin: auto;
 }

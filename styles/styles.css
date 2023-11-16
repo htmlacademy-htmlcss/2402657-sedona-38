@@ -753,6 +753,10 @@ input[type="number"]::-webkit-inner-spin-button {
   width: 1200px;
 }
 
+.advantages-wrapper {
+  display: flex;
+}
+
 .advantages-item-blue, .advantages-item-white, .advantages-item-azure {
   width: 400px;
   min-height: 385px;

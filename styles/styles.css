@@ -1161,7 +1161,16 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 16px;
   color: #FFFFFF;
   padding: 3px 10px 3px 0;
-  /*margin-left: 10px;*/
+}
+
+.breadcrumbs-home-link {
+  display: block;
+  background-image: url('../images/logos/logo-main-page.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 13px;
+  height: 15px;
 }
 
 .breadcrumbs-link-current {
